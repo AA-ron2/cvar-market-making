@@ -119,5 +119,6 @@ describes every file.
 | Appendix B "Hummingbot forward validation (paper-trading deployment test)": Table B.1 "Hummingbot forward validation per bot and day", Figure B.1 "Inventory per bot and prospective day" and the readings in the text | `forward_test/`: `appendix_table.tex` (Table B.1, from `qa_inventory.csv`, `qb_expected_fills.csv`, `qb_markouts.csv`, `qc_break_even.csv`, `qd_operations.csv` and `shadow_vs_paper.csv`), `fig_forward_inventory.pdf` and `.png` (Figure B.1), `pnl_split.csv` and `qb_fill_classes.csv` (the two exploratory readings) |
 | Provenance of the profile stage | `profiling/profile_stage.sha256`, `profile_stage.commit`, `profile_stage.submitted`, `profiling/b3_dual/inputs*.sha256` |
 
-The README's results table and `docs/figures/cvar_by_model.png` are generated from these files by
-`scripts/analysis/make_readme_assets.py`.
+The README's results table and its figures (`docs/figures/results.png` and `b3_training.png`, each with a `-dark`
+variant for GitHub's dark theme) are generated from these files by `scripts/analysis/make_readme_assets.py`. The
+schematic at the top of the README, `docs/figures/overview.svg`, is drawn by hand.

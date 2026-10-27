@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="330" viewBox="0 0 960 330" role="img" aria-label="How the models work: order-book replay, calibration, Avellaneda–Stoikov quotes set from the policy's risk aversion and skew, a best-price-reach execution proxy, and evaluation on 23 test days">
+<style>
+  svg { --bg:#F6F8FA; --panel:#FFFFFF; --border:#D1D9E0; --text:#1F2328; --muted:#59636E; --arrow:#818B98;
+        --b0:#333333; --b1:#0072B2; --b2:#E69F00; --b3:#009E73; --bp:#56B4E9; }
+  @media (prefers-color-scheme: dark) {
+    svg { --bg:#161B22; --panel:#0D1117; --border:#3D444D; --text:#E6EDF3; --muted:#9198A1; --arrow:#6E7681;
+          --b0:#C9D1D9; --b1:#3F7FE8; --b2:#BF8300; --b3:#109C76; --bp:#3E9BDF; }
+  }
+  text { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif; fill: var(--text); }
+  .muted { fill: var(--muted); }
+  .title { font-size: 14px; font-weight: 600; }
+  .small { font-size: 12px; }
+  .chip { font-size: 12px; }
+  .box { fill: var(--panel); stroke: var(--border); stroke-width: 1; }
+  .card { fill: var(--bg); stroke: var(--border); stroke-width: 1; }
+  .arrow { stroke: var(--arrow); stroke-width: 1.6; fill: none; }
+  .head { fill: var(--arrow); }
+</style>
+<defs><marker id="ah" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path class="head" d="M0,0 L10,5 L0,10 z"/></marker></defs>
+<rect class="card" x="0.5" y="0.5" width="959" height="329" rx="12"/>
+<rect class="box" x="36" y="22" width="888" height="118" rx="10"/>
+<text class="title" x="54" y="50">Policy: sets the risk aversion γ and a quote skew at every step</text>
+<text class="small muted" x="54" y="71">γ ∈ [0.01, 0.9], skew ∈ [−5, 5] ticks; the PPO policies observe inventory, time left, mid, volatility, momentum, spread and imbalance</text>
+<rect x="54" y="88" width="156" height="30" rx="15" fill="none" stroke="var(--b0)" stroke-width="1.5"/>
+<circle cx="69" cy="103" r="5" fill="var(--b0)"/>
+<text class="chip" x="80" y="107.5"><tspan font-weight="600">B0</tspan> analytic, fixed γ</text>
+<rect x="220" y="88" width="88" height="30" rx="15" fill="none" stroke="var(--b1)" stroke-width="1.5"/>
+<circle cx="235" cy="103" r="5" fill="var(--b1)"/>
+<text class="chip" x="246" y="107.5"><tspan font-weight="600">B1</tspan> PPO</text>
+<rect x="318" y="88" width="210" height="30" rx="15" fill="none" stroke="var(--b2)" stroke-width="1.5"/>
+<circle cx="333" cy="103" r="5" fill="var(--b2)"/>
+<text class="chip" x="344" y="107.5"><tspan font-weight="600">B2</tspan> PPO + drawdown penalty</text>
+<rect x="538" y="88" width="196" height="30" rx="15" fill="none" stroke="var(--b3)" stroke-width="1.5"/>
+<circle cx="553" cy="103" r="5" fill="var(--b3)"/>
+<text class="chip" x="564" y="107.5"><tspan font-weight="600">B3</tspan> PPO + CVaR constraint</text>
+<rect x="744" y="88" width="124" height="30" rx="15" fill="none" stroke="var(--bp)" stroke-width="1.5"/>
+<circle cx="759" cy="103" r="5" fill="var(--bp)"/>
+<text class="chip" x="770" y="107.5"><tspan font-weight="600">B1⁺</tspan> control</text>
+<rect class="box" x="24" y="206" width="164" height="96" rx="10"/>
+<text class="title" x="106.0" y="238" text-anchor="middle">Order-book replay</text>
+<text class="small muted" x="106.0" y="262" text-anchor="middle">Binance Spot DOGEUSDT,</text>
+<text class="small muted" x="106.0" y="280" text-anchor="middle">25 levels, January 2025</text>
+<rect class="box" x="210" y="206" width="164" height="96" rx="10"/>
+<text class="title" x="292.0" y="238" text-anchor="middle">Calibration</text>
+<text class="small muted" x="292.0" y="262" text-anchor="middle">σ, A and κ fitted on</text>
+<text class="small muted" x="292.0" y="280" text-anchor="middle">Jan 1–6 only</text>
+<line class="arrow" x1="190" y1="254.0" x2="208" y2="254.0" marker-end="url(#ah)"/>
+<rect class="box" x="396" y="206" width="164" height="96" rx="10"/>
+<text class="title" x="478.0" y="238" text-anchor="middle">Avellaneda–Stoikov</text>
+<text class="small muted" x="478.0" y="262" text-anchor="middle">bid and ask quotes</text>
+<text class="small muted" x="478.0" y="280" text-anchor="middle">from γ and the skew</text>
+<line class="arrow" x1="376" y1="254.0" x2="394" y2="254.0" marker-end="url(#ah)"/>
+<rect class="box" x="582" y="206" width="164" height="96" rx="10"/>
+<text class="title" x="664.0" y="238" text-anchor="middle">Execution proxy</text>
+<text class="small muted" x="664.0" y="262" text-anchor="middle">best-price reach:</text>
+<text class="small muted" x="664.0" y="280" text-anchor="middle">fills, inventory, P&amp;L</text>
+<line class="arrow" x1="562" y1="254.0" x2="580" y2="254.0" marker-end="url(#ah)"/>
+<rect class="box" x="768" y="206" width="164" height="96" rx="10"/>
+<text class="title" x="850.0" y="238" text-anchor="middle">Evaluation</text>
+<text class="small muted" x="850.0" y="262" text-anchor="middle">23 test days, Jan 7–29:</text>
+<text class="small muted" x="850.0" y="280" text-anchor="middle">CVaR₀.₂ of daily max DD</text>
+<line class="arrow" x1="748" y1="254.0" x2="766" y2="254.0" marker-end="url(#ah)"/>
+<line class="arrow" x1="478.0" y1="142" x2="478.0" y2="204" marker-end="url(#ah)"/>
+<text class="small muted" x="470.0" y="177.0" text-anchor="end">γ, skew</text>
+<line class="arrow" x1="664.0" y1="204" x2="664.0" y2="142" marker-end="url(#ah)"/>
+<text class="small muted" x="672.0" y="177.0">state</text>
+</svg>
