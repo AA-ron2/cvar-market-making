@@ -1,0 +1,3404 @@
+{
+  "estimator": "stochastic (D-17)",
+  "d": 0.07298833322901398,
+  "rho": 0.2,
+  "threshold_multiplier": 0.8,
+  "cvar_stochastic": 0.09123541653626746,
+  "nu_stochastic": 0.07261999978159883,
+  "cvar_deterministic": 0.0915705207074326,
+  "nu_deterministic": 0.07498499967365957,
+  "b1_log_std": [
+    -1.2039728164672852,
+    -1.2039728164672852
+  ],
+  "b1_std": [
+    0.29999998211860657,
+    0.29999998211860657
+  ],
+  "b1_pinned_share": [
+    0.21162635029440274,
+    0.46970764045956975
+  ],
+  "fill_seeds": [
+    42,
+    43
+  ],
+  "rollouts_per_seed": 20,
+  "paths_per_estimator": 240,
+  "policy_sampling_seed": "torch.manual_seed(fill seed) before each (day, fill seed) rollout, in a forked CPU RNG state (D-17)",
+  "training_seed": 42,
+  "constraint_scope": "full_market_day_trajectory_maxdrawdown",
+  "reference_model": "corrected_b1",
+  "reference_model_path": "models/ppo_b1_doge.zip",
+  "reference_vecnorm_path": "models/vecnorm_b1.pkl",
+  "train_dates": [
+    "2025-01-01",
+    "2025-01-02",
+    "2025-01-03",
+    "2025-01-04",
+    "2025-01-05",
+    "2025-01-06"
+  ],
+  "trajectory_records": [
+    {
+      "day_index": 0,
+      "fill_seed": 42,
+      "path": 0,
+      "deterministic": false,
+      "max_drawdown": 0.04803999972604922
+    },
+    {
+      "day_index": 0,
+      "fill_seed": 42,
+      "path": 1,
+      "deterministic": false,
+      "max_drawdown": 0.038274999831223955
+    },
+    {
+      "day_index": 0,
+      "fill_seed": 42,
+      "path": 2,
+      "deterministic": false,
+      "max_drawdown": 0.047344999889583406
+    },
+    {
+      "day_index": 0,
+      "fill_seed": 42,
+      "path": 3,
+      "deterministic": false,
+      "max_drawdown": 0.03900999993550114
+    },
+    {
+      "day_index": 0,
+      "fill_seed": 42,
+      "path": 4,
+      "deterministic": false,
+      "max_drawdown": 0.04677499985507039
+    },
+    {
+      "day_index": 0,
+      "fill_seed": 42,
+      "path": 5,
+      "deterministic": false,
+      "max_drawdown": 0.03416999995987613
+    },
+    {
+      "day_index": 0,
+      "fill_seed": 42,
+      "path": 6,
+      "deterministic": false,
+      "max_drawdown": 0.044194999830210246
+    },
+    {
+      "day_index": 0,
+      "fill_seed": 42,
+      "path": 7,
+      "deterministic": false,
+      "max_drawdown": 0.044614999795797416
+    },
+    {
+      "day_index": 0,
+      "fill_seed": 42,
+      "path": 8,
+      "deterministic": false,
+      "max_drawdown": 0.03310499985461002
+    },
+    {
+      "day_index": 0,
+      "fill_seed": 42,
+      "path": 9,
+      "deterministic": false,
+      "max_drawdown": 0.03970499986785159
+    },
+    {
+      "day_index": 0,
+      "fill_seed": 42,
+      "path": 10,
+      "deterministic": false,
+      "max_drawdown": 0.044184999896451416
+    },
+    {
+      "day_index": 0,
+      "fill_seed": 42,
+      "path": 11,
+      "deterministic": false,
+      "max_drawdown": 0.033979999775369585
+    },
+    {
+      "day_index": 0,
+      "fill_seed": 42,
+      "path": 12,
+      "deterministic": false,
+      "max_drawdown": 0.04025499986757053
+    },
+    {
+      "day_index": 0,
+      "fill_seed": 42,
+      "path": 13,
+      "deterministic": false,
+      "max_drawdown": 0.045019999849084336
+    },
+    {
+      "day_index": 0,
+      "fill_seed": 42,
+      "path": 14,
+      "deterministic": false,
+      "max_drawdown": 0.041814999860070534
+    },
+    {
+      "day_index": 0,
+      "fill_seed": 42,
+      "path": 15,
+      "deterministic": false,
+      "max_drawdown": 0.03635499985228563
+    },
+    {
+      "day_index": 0,
+      "fill_seed": 42,
+      "path": 16,
+      "deterministic": false,
+      "max_drawdown": 0.03593999981026785
+    },
+    {
+      "day_index": 0,
+      "fill_seed": 42,
+      "path": 17,
+      "deterministic": false,
+      "max_drawdown": 0.037454999999161576
+    },
+    {
+      "day_index": 0,
+      "fill_seed": 42,
+      "path": 18,
+      "deterministic": false,
+      "max_drawdown": 0.04326999977808699
+    },
+    {
+      "day_index": 0,
+      "fill_seed": 42,
+      "path": 19,
+      "deterministic": false,
+      "max_drawdown": 0.044744999946471964
+    },
+    {
+      "day_index": 0,
+      "fill_seed": 43,
+      "path": 0,
+      "deterministic": false,
+      "max_drawdown": 0.04243499987028465
+    },
+    {
+      "day_index": 0,
+      "fill_seed": 43,
+      "path": 1,
+      "deterministic": false,
+      "max_drawdown": 0.04325999996617602
+    },
+    {
+      "day_index": 0,
+      "fill_seed": 43,
+      "path": 2,
+      "deterministic": false,
+      "max_drawdown": 0.04502999980628686
+    },
+    {
+      "day_index": 0,
+      "fill_seed": 43,
+      "path": 3,
+      "deterministic": false,
+      "max_drawdown": 0.044419999810583644
+    },
+    {
+      "day_index": 0,
+      "fill_seed": 43,
+      "path": 4,
+      "deterministic": false,
+      "max_drawdown": 0.041894999934801724
+    },
+    {
+      "day_index": 0,
+      "fill_seed": 43,
+      "path": 5,
+      "deterministic": false,
+      "max_drawdown": 0.042034999927141214
+    },
+    {
+      "day_index": 0,
+      "fill_seed": 43,
+      "path": 6,
+      "deterministic": false,
+      "max_drawdown": 0.04061999982251363
+    },
+    {
+      "day_index": 0,
+      "fill_seed": 43,
+      "path": 7,
+      "deterministic": false,
+      "max_drawdown": 0.04316499978341781
+    },
+    {
+      "day_index": 0,
+      "fill_seed": 43,
+      "path": 8,
+      "deterministic": false,
+      "max_drawdown": 0.03813999986131522
+    },
+    {
+      "day_index": 0,
+      "fill_seed": 43,
+      "path": 9,
+      "deterministic": false,
+      "max_drawdown": 0.04075499986386699
+    },
+    {
+      "day_index": 0,
+      "fill_seed": 43,
+      "path": 10,
+      "deterministic": false,
+      "max_drawdown": 0.042244999768257685
+    },
+    {
+      "day_index": 0,
+      "fill_seed": 43,
+      "path": 11,
+      "deterministic": false,
+      "max_drawdown": 0.04749999974989283
+    },
+    {
+      "day_index": 0,
+      "fill_seed": 43,
+      "path": 12,
+      "deterministic": false,
+      "max_drawdown": 0.04424499986108632
+    },
+    {
+      "day_index": 0,
+      "fill_seed": 43,
+      "path": 13,
+      "deterministic": false,
+      "max_drawdown": 0.03934999980633225
+    },
+    {
+      "day_index": 0,
+      "fill_seed": 43,
+      "path": 14,
+      "deterministic": false,
+      "max_drawdown": 0.03657499987032509
+    },
+    {
+      "day_index": 0,
+      "fill_seed": 43,
+      "path": 15,
+      "deterministic": false,
+      "max_drawdown": 0.04599999986418979
+    },
+    {
+      "day_index": 0,
+      "fill_seed": 43,
+      "path": 16,
+      "deterministic": false,
+      "max_drawdown": 0.042119999887074044
+    },
+    {
+      "day_index": 0,
+      "fill_seed": 43,
+      "path": 17,
+      "deterministic": false,
+      "max_drawdown": 0.0466949997452466
+    },
+    {
+      "day_index": 0,
+      "fill_seed": 43,
+      "path": 18,
+      "deterministic": false,
+      "max_drawdown": 0.032539999804467534
+    },
+    {
+      "day_index": 0,
+      "fill_seed": 43,
+      "path": 19,
+      "deterministic": false,
+      "max_drawdown": 0.03902499990142627
+    },
+    {
+      "day_index": 1,
+      "fill_seed": 42,
+      "path": 0,
+      "deterministic": false,
+      "max_drawdown": 0.03131000017819874
+    },
+    {
+      "day_index": 1,
+      "fill_seed": 42,
+      "path": 1,
+      "deterministic": false,
+      "max_drawdown": 0.03259500015013295
+    },
+    {
+      "day_index": 1,
+      "fill_seed": 42,
+      "path": 2,
+      "deterministic": false,
+      "max_drawdown": 0.03558500009930299
+    },
+    {
+      "day_index": 1,
+      "fill_seed": 42,
+      "path": 3,
+      "deterministic": false,
+      "max_drawdown": 0.029810000280495963
+    },
+    {
+      "day_index": 1,
+      "fill_seed": 42,
+      "path": 4,
+      "deterministic": false,
+      "max_drawdown": 0.034140000149548655
+    },
+    {
+      "day_index": 1,
+      "fill_seed": 42,
+      "path": 5,
+      "deterministic": false,
+      "max_drawdown": 0.03416500013285173
+    },
+    {
+      "day_index": 1,
+      "fill_seed": 42,
+      "path": 6,
+      "deterministic": false,
+      "max_drawdown": 0.03242000014919322
+    },
+    {
+      "day_index": 1,
+      "fill_seed": 42,
+      "path": 7,
+      "deterministic": false,
+      "max_drawdown": 0.032404999979912974
+    },
+    {
+      "day_index": 1,
+      "fill_seed": 42,
+      "path": 8,
+      "deterministic": false,
+      "max_drawdown": 0.03339000014353832
+    },
+    {
+      "day_index": 1,
+      "fill_seed": 42,
+      "path": 9,
+      "deterministic": false,
+      "max_drawdown": 0.03126000027080034
+    },
+    {
+      "day_index": 1,
+      "fill_seed": 42,
+      "path": 10,
+      "deterministic": false,
+      "max_drawdown": 0.03161999995734388
+    },
+    {
+      "day_index": 1,
+      "fill_seed": 42,
+      "path": 11,
+      "deterministic": false,
+      "max_drawdown": 0.033584999965155404
+    },
+    {
+      "day_index": 1,
+      "fill_seed": 42,
+      "path": 12,
+      "deterministic": false,
+      "max_drawdown": 0.034959999978723566
+    },
+    {
+      "day_index": 1,
+      "fill_seed": 42,
+      "path": 13,
+      "deterministic": false,
+      "max_drawdown": 0.030235000144621438
+    },
+    {
+      "day_index": 1,
+      "fill_seed": 42,
+      "path": 14,
+      "deterministic": false,
+      "max_drawdown": 0.03267000011332177
+    },
+    {
+      "day_index": 1,
+      "fill_seed": 42,
+      "path": 15,
+      "deterministic": false,
+      "max_drawdown": 0.033065000128706945
+    },
+    {
+      "day_index": 1,
+      "fill_seed": 42,
+      "path": 16,
+      "deterministic": false,
+      "max_drawdown": 0.027724999934660488
+    },
+    {
+      "day_index": 1,
+      "fill_seed": 42,
+      "path": 17,
+      "deterministic": false,
+      "max_drawdown": 0.03064500012011573
+    },
+    {
+      "day_index": 1,
+      "fill_seed": 42,
+      "path": 18,
+      "deterministic": false,
+      "max_drawdown": 0.03325000033244274
+    },
+    {
+      "day_index": 1,
+      "fill_seed": 42,
+      "path": 19,
+      "deterministic": false,
+      "max_drawdown": 0.0341600000927591
+    },
+    {
+      "day_index": 1,
+      "fill_seed": 43,
+      "path": 0,
+      "deterministic": false,
+      "max_drawdown": 0.03147000025862301
+    },
+    {
+      "day_index": 1,
+      "fill_seed": 43,
+      "path": 1,
+      "deterministic": false,
+      "max_drawdown": 0.030885000114506234
+    },
+    {
+      "day_index": 1,
+      "fill_seed": 43,
+      "path": 2,
+      "deterministic": false,
+      "max_drawdown": 0.02770000014070506
+    },
+    {
+      "day_index": 1,
+      "fill_seed": 43,
+      "path": 3,
+      "deterministic": false,
+      "max_drawdown": 0.0338700003139536
+    },
+    {
+      "day_index": 1,
+      "fill_seed": 43,
+      "path": 4,
+      "deterministic": false,
+      "max_drawdown": 0.03472000019213706
+    },
+    {
+      "day_index": 1,
+      "fill_seed": 43,
+      "path": 5,
+      "deterministic": false,
+      "max_drawdown": 0.03278500007191587
+    },
+    {
+      "day_index": 1,
+      "fill_seed": 43,
+      "path": 6,
+      "deterministic": false,
+      "max_drawdown": 0.03854499959658053
+    },
+    {
+      "day_index": 1,
+      "fill_seed": 43,
+      "path": 7,
+      "deterministic": false,
+      "max_drawdown": 0.02380000016667516
+    },
+    {
+      "day_index": 1,
+      "fill_seed": 43,
+      "path": 8,
+      "deterministic": false,
+      "max_drawdown": 0.029855000148109045
+    },
+    {
+      "day_index": 1,
+      "fill_seed": 43,
+      "path": 9,
+      "deterministic": false,
+      "max_drawdown": 0.028120000107459298
+    },
+    {
+      "day_index": 1,
+      "fill_seed": 43,
+      "path": 10,
+      "deterministic": false,
+      "max_drawdown": 0.03068500028800969
+    },
+    {
+      "day_index": 1,
+      "fill_seed": 43,
+      "path": 11,
+      "deterministic": false,
+      "max_drawdown": 0.04924999981618017
+    },
+    {
+      "day_index": 1,
+      "fill_seed": 43,
+      "path": 12,
+      "deterministic": false,
+      "max_drawdown": 0.03028500030084258
+    },
+    {
+      "day_index": 1,
+      "fill_seed": 43,
+      "path": 13,
+      "deterministic": false,
+      "max_drawdown": 0.029650000155204914
+    },
+    {
+      "day_index": 1,
+      "fill_seed": 43,
+      "path": 14,
+      "deterministic": false,
+      "max_drawdown": 0.03108500019211613
+    },
+    {
+      "day_index": 1,
+      "fill_seed": 43,
+      "path": 15,
+      "deterministic": false,
+      "max_drawdown": 0.03254500021883766
+    },
+    {
+      "day_index": 1,
+      "fill_seed": 43,
+      "path": 16,
+      "deterministic": false,
+      "max_drawdown": 0.030940000128375722
+    },
+    {
+      "day_index": 1,
+      "fill_seed": 43,
+      "path": 17,
+      "deterministic": false,
+      "max_drawdown": 0.03489000009457799
+    },
+    {
+      "day_index": 1,
+      "fill_seed": 43,
+      "path": 18,
+      "deterministic": false,
+      "max_drawdown": 0.031945000160991555
+    },
+    {
+      "day_index": 1,
+      "fill_seed": 43,
+      "path": 19,
+      "deterministic": false,
+      "max_drawdown": 0.03270500012431077
+    },
+    {
+      "day_index": 2,
+      "fill_seed": 42,
+      "path": 0,
+      "deterministic": false,
+      "max_drawdown": 0.06929999960577415
+    },
+    {
+      "day_index": 2,
+      "fill_seed": 42,
+      "path": 1,
+      "deterministic": false,
+      "max_drawdown": 0.09288999992669522
+    },
+    {
+      "day_index": 2,
+      "fill_seed": 42,
+      "path": 2,
+      "deterministic": false,
+      "max_drawdown": 0.10956999995829442
+    },
+    {
+      "day_index": 2,
+      "fill_seed": 42,
+      "path": 3,
+      "deterministic": false,
+      "max_drawdown": 0.10236999989708417
+    },
+    {
+      "day_index": 2,
+      "fill_seed": 42,
+      "path": 4,
+      "deterministic": false,
+      "max_drawdown": 0.08960499996576754
+    },
+    {
+      "day_index": 2,
+      "fill_seed": 42,
+      "path": 5,
+      "deterministic": false,
+      "max_drawdown": 0.08478999989917213
+    },
+    {
+      "day_index": 2,
+      "fill_seed": 42,
+      "path": 6,
+      "deterministic": false,
+      "max_drawdown": 0.06605999991445533
+    },
+    {
+      "day_index": 2,
+      "fill_seed": 42,
+      "path": 7,
+      "deterministic": false,
+      "max_drawdown": 0.08317999986064617
+    },
+    {
+      "day_index": 2,
+      "fill_seed": 42,
+      "path": 8,
+      "deterministic": false,
+      "max_drawdown": 0.07890499990988076
+    },
+    {
+      "day_index": 2,
+      "fill_seed": 42,
+      "path": 9,
+      "deterministic": false,
+      "max_drawdown": 0.10200999970184421
+    },
+    {
+      "day_index": 2,
+      "fill_seed": 42,
+      "path": 10,
+      "deterministic": false,
+      "max_drawdown": 0.07931999986557048
+    },
+    {
+      "day_index": 2,
+      "fill_seed": 42,
+      "path": 11,
+      "deterministic": false,
+      "max_drawdown": 0.07433999997114871
+    },
+    {
+      "day_index": 2,
+      "fill_seed": 42,
+      "path": 12,
+      "deterministic": false,
+      "max_drawdown": 0.1085849999738111
+    },
+    {
+      "day_index": 2,
+      "fill_seed": 42,
+      "path": 13,
+      "deterministic": false,
+      "max_drawdown": 0.07919999990108018
+    },
+    {
+      "day_index": 2,
+      "fill_seed": 42,
+      "path": 14,
+      "deterministic": false,
+      "max_drawdown": 0.11378499994070301
+    },
+    {
+      "day_index": 2,
+      "fill_seed": 42,
+      "path": 15,
+      "deterministic": false,
+      "max_drawdown": 0.10462499991236829
+    },
+    {
+      "day_index": 2,
+      "fill_seed": 42,
+      "path": 16,
+      "deterministic": false,
+      "max_drawdown": 0.10345999996635857
+    },
+    {
+      "day_index": 2,
+      "fill_seed": 42,
+      "path": 17,
+      "deterministic": false,
+      "max_drawdown": 0.06833500004709347
+    },
+    {
+      "day_index": 2,
+      "fill_seed": 42,
+      "path": 18,
+      "deterministic": false,
+      "max_drawdown": 0.08845499987390681
+    },
+    {
+      "day_index": 2,
+      "fill_seed": 42,
+      "path": 19,
+      "deterministic": false,
+      "max_drawdown": 0.08206999991435904
+    },
+    {
+      "day_index": 2,
+      "fill_seed": 43,
+      "path": 0,
+      "deterministic": false,
+      "max_drawdown": 0.07418999990164021
+    },
+    {
+      "day_index": 2,
+      "fill_seed": 43,
+      "path": 1,
+      "deterministic": false,
+      "max_drawdown": 0.06565999984295345
+    },
+    {
+      "day_index": 2,
+      "fill_seed": 43,
+      "path": 2,
+      "deterministic": false,
+      "max_drawdown": 0.08298499995990838
+    },
+    {
+      "day_index": 2,
+      "fill_seed": 43,
+      "path": 3,
+      "deterministic": false,
+      "max_drawdown": 0.09274999998920741
+    },
+    {
+      "day_index": 2,
+      "fill_seed": 43,
+      "path": 4,
+      "deterministic": false,
+      "max_drawdown": 0.07121999990385519
+    },
+    {
+      "day_index": 2,
+      "fill_seed": 43,
+      "path": 5,
+      "deterministic": false,
+      "max_drawdown": 0.07646499978768384
+    },
+    {
+      "day_index": 2,
+      "fill_seed": 43,
+      "path": 6,
+      "deterministic": false,
+      "max_drawdown": 0.057609999916987675
+    },
+    {
+      "day_index": 2,
+      "fill_seed": 43,
+      "path": 7,
+      "deterministic": false,
+      "max_drawdown": 0.0721249999732021
+    },
+    {
+      "day_index": 2,
+      "fill_seed": 43,
+      "path": 8,
+      "deterministic": false,
+      "max_drawdown": 0.08513999989111998
+    },
+    {
+      "day_index": 2,
+      "fill_seed": 43,
+      "path": 9,
+      "deterministic": false,
+      "max_drawdown": 0.0925799997993555
+    },
+    {
+      "day_index": 2,
+      "fill_seed": 43,
+      "path": 10,
+      "deterministic": false,
+      "max_drawdown": 0.07224499992437616
+    },
+    {
+      "day_index": 2,
+      "fill_seed": 43,
+      "path": 11,
+      "deterministic": false,
+      "max_drawdown": 0.08323999991744113
+    },
+    {
+      "day_index": 2,
+      "fill_seed": 43,
+      "path": 12,
+      "deterministic": false,
+      "max_drawdown": 0.09870499981632275
+    },
+    {
+      "day_index": 2,
+      "fill_seed": 43,
+      "path": 13,
+      "deterministic": false,
+      "max_drawdown": 0.11322500001938485
+    },
+    {
+      "day_index": 2,
+      "fill_seed": 43,
+      "path": 14,
+      "deterministic": false,
+      "max_drawdown": 0.07849499991226638
+    },
+    {
+      "day_index": 2,
+      "fill_seed": 43,
+      "path": 15,
+      "deterministic": false,
+      "max_drawdown": 0.07036499980146038
+    },
+    {
+      "day_index": 2,
+      "fill_seed": 43,
+      "path": 16,
+      "deterministic": false,
+      "max_drawdown": 0.09096999989337284
+    },
+    {
+      "day_index": 2,
+      "fill_seed": 43,
+      "path": 17,
+      "deterministic": false,
+      "max_drawdown": 0.08542999987954447
+    },
+    {
+      "day_index": 2,
+      "fill_seed": 43,
+      "path": 18,
+      "deterministic": false,
+      "max_drawdown": 0.11450000002599481
+    },
+    {
+      "day_index": 2,
+      "fill_seed": 43,
+      "path": 19,
+      "deterministic": false,
+      "max_drawdown": 0.08602000003900301
+    },
+    {
+      "day_index": 3,
+      "fill_seed": 42,
+      "path": 0,
+      "deterministic": false,
+      "max_drawdown": 0.06998999997016764
+    },
+    {
+      "day_index": 3,
+      "fill_seed": 42,
+      "path": 1,
+      "deterministic": false,
+      "max_drawdown": 0.06860499985920487
+    },
+    {
+      "day_index": 3,
+      "fill_seed": 42,
+      "path": 2,
+      "deterministic": false,
+      "max_drawdown": 0.07817499996402866
+    },
+    {
+      "day_index": 3,
+      "fill_seed": 42,
+      "path": 3,
+      "deterministic": false,
+      "max_drawdown": 0.055839999976771804
+    },
+    {
+      "day_index": 3,
+      "fill_seed": 42,
+      "path": 4,
+      "deterministic": false,
+      "max_drawdown": 0.056499999887940744
+    },
+    {
+      "day_index": 3,
+      "fill_seed": 42,
+      "path": 5,
+      "deterministic": false,
+      "max_drawdown": 0.06767999993409801
+    },
+    {
+      "day_index": 3,
+      "fill_seed": 42,
+      "path": 6,
+      "deterministic": false,
+      "max_drawdown": 0.045294999939159086
+    },
+    {
+      "day_index": 3,
+      "fill_seed": 42,
+      "path": 7,
+      "deterministic": false,
+      "max_drawdown": 0.050074999798084274
+    },
+    {
+      "day_index": 3,
+      "fill_seed": 42,
+      "path": 8,
+      "deterministic": false,
+      "max_drawdown": 0.09569999980682753
+    },
+    {
+      "day_index": 3,
+      "fill_seed": 42,
+      "path": 9,
+      "deterministic": false,
+      "max_drawdown": 0.09461999970496748
+    },
+    {
+      "day_index": 3,
+      "fill_seed": 42,
+      "path": 10,
+      "deterministic": false,
+      "max_drawdown": 0.07142999971457709
+    },
+    {
+      "day_index": 3,
+      "fill_seed": 42,
+      "path": 11,
+      "deterministic": false,
+      "max_drawdown": 0.04489999998476346
+    },
+    {
+      "day_index": 3,
+      "fill_seed": 42,
+      "path": 12,
+      "deterministic": false,
+      "max_drawdown": 0.08835499969815519
+    },
+    {
+      "day_index": 3,
+      "fill_seed": 42,
+      "path": 13,
+      "deterministic": false,
+      "max_drawdown": 0.07322499993941856
+    },
+    {
+      "day_index": 3,
+      "fill_seed": 42,
+      "path": 14,
+      "deterministic": false,
+      "max_drawdown": 0.12828999979698974
+    },
+    {
+      "day_index": 3,
+      "fill_seed": 42,
+      "path": 15,
+      "deterministic": false,
+      "max_drawdown": 0.07498999980438792
+    },
+    {
+      "day_index": 3,
+      "fill_seed": 42,
+      "path": 16,
+      "deterministic": false,
+      "max_drawdown": 0.08261999978539025
+    },
+    {
+      "day_index": 3,
+      "fill_seed": 42,
+      "path": 17,
+      "deterministic": false,
+      "max_drawdown": 0.050124999732843456
+    },
+    {
+      "day_index": 3,
+      "fill_seed": 42,
+      "path": 18,
+      "deterministic": false,
+      "max_drawdown": 0.09023499984917205
+    },
+    {
+      "day_index": 3,
+      "fill_seed": 42,
+      "path": 19,
+      "deterministic": false,
+      "max_drawdown": 0.07512499973571174
+    },
+    {
+      "day_index": 3,
+      "fill_seed": 43,
+      "path": 0,
+      "deterministic": false,
+      "max_drawdown": 0.0697649999045098
+    },
+    {
+      "day_index": 3,
+      "fill_seed": 43,
+      "path": 1,
+      "deterministic": false,
+      "max_drawdown": 0.045179999925797576
+    },
+    {
+      "day_index": 3,
+      "fill_seed": 43,
+      "path": 2,
+      "deterministic": false,
+      "max_drawdown": 0.05022499992583951
+    },
+    {
+      "day_index": 3,
+      "fill_seed": 43,
+      "path": 3,
+      "deterministic": false,
+      "max_drawdown": 0.0629349998634281
+    },
+    {
+      "day_index": 3,
+      "fill_seed": 43,
+      "path": 4,
+      "deterministic": false,
+      "max_drawdown": 0.11388499985105094
+    },
+    {
+      "day_index": 3,
+      "fill_seed": 43,
+      "path": 5,
+      "deterministic": false,
+      "max_drawdown": 0.06967499986964576
+    },
+    {
+      "day_index": 3,
+      "fill_seed": 43,
+      "path": 6,
+      "deterministic": false,
+      "max_drawdown": 0.06961999991989698
+    },
+    {
+      "day_index": 3,
+      "fill_seed": 43,
+      "path": 7,
+      "deterministic": false,
+      "max_drawdown": 0.03421999995751002
+    },
+    {
+      "day_index": 3,
+      "fill_seed": 43,
+      "path": 8,
+      "deterministic": false,
+      "max_drawdown": 0.07261999978159883
+    },
+    {
+      "day_index": 3,
+      "fill_seed": 43,
+      "path": 9,
+      "deterministic": false,
+      "max_drawdown": 0.09975999968234328
+    },
+    {
+      "day_index": 3,
+      "fill_seed": 43,
+      "path": 10,
+      "deterministic": false,
+      "max_drawdown": 0.11038999971408403
+    },
+    {
+      "day_index": 3,
+      "fill_seed": 43,
+      "path": 11,
+      "deterministic": false,
+      "max_drawdown": 0.0719449999245183
+    },
+    {
+      "day_index": 3,
+      "fill_seed": 43,
+      "path": 12,
+      "deterministic": false,
+      "max_drawdown": 0.062214999952941774
+    },
+    {
+      "day_index": 3,
+      "fill_seed": 43,
+      "path": 13,
+      "deterministic": false,
+      "max_drawdown": 0.0659349996625167
+    },
+    {
+      "day_index": 3,
+      "fill_seed": 43,
+      "path": 14,
+      "deterministic": false,
+      "max_drawdown": 0.08941499973856093
+    },
+    {
+      "day_index": 3,
+      "fill_seed": 43,
+      "path": 15,
+      "deterministic": false,
+      "max_drawdown": 0.09371999972380074
+    },
+    {
+      "day_index": 3,
+      "fill_seed": 43,
+      "path": 16,
+      "deterministic": false,
+      "max_drawdown": 0.06654999990044375
+    },
+    {
+      "day_index": 3,
+      "fill_seed": 43,
+      "path": 17,
+      "deterministic": false,
+      "max_drawdown": 0.08631999989341366
+    },
+    {
+      "day_index": 3,
+      "fill_seed": 43,
+      "path": 18,
+      "deterministic": false,
+      "max_drawdown": 0.04310500001441353
+    },
+    {
+      "day_index": 3,
+      "fill_seed": 43,
+      "path": 19,
+      "deterministic": false,
+      "max_drawdown": 0.07043499985206036
+    },
+    {
+      "day_index": 4,
+      "fill_seed": 42,
+      "path": 0,
+      "deterministic": false,
+      "max_drawdown": 0.025115000011888267
+    },
+    {
+      "day_index": 4,
+      "fill_seed": 42,
+      "path": 1,
+      "deterministic": false,
+      "max_drawdown": 0.026350000048890987
+    },
+    {
+      "day_index": 4,
+      "fill_seed": 42,
+      "path": 2,
+      "deterministic": false,
+      "max_drawdown": 0.03123999990626114
+    },
+    {
+      "day_index": 4,
+      "fill_seed": 42,
+      "path": 3,
+      "deterministic": false,
+      "max_drawdown": 0.02599000000873586
+    },
+    {
+      "day_index": 4,
+      "fill_seed": 42,
+      "path": 4,
+      "deterministic": false,
+      "max_drawdown": 0.028199999798396824
+    },
+    {
+      "day_index": 4,
+      "fill_seed": 42,
+      "path": 5,
+      "deterministic": false,
+      "max_drawdown": 0.03160499988192811
+    },
+    {
+      "day_index": 4,
+      "fill_seed": 42,
+      "path": 6,
+      "deterministic": false,
+      "max_drawdown": 0.027744999972585505
+    },
+    {
+      "day_index": 4,
+      "fill_seed": 42,
+      "path": 7,
+      "deterministic": false,
+      "max_drawdown": 0.03174999985021598
+    },
+    {
+      "day_index": 4,
+      "fill_seed": 42,
+      "path": 8,
+      "deterministic": false,
+      "max_drawdown": 0.028979999898476994
+    },
+    {
+      "day_index": 4,
+      "fill_seed": 42,
+      "path": 9,
+      "deterministic": false,
+      "max_drawdown": 0.038114999877222555
+    },
+    {
+      "day_index": 4,
+      "fill_seed": 42,
+      "path": 10,
+      "deterministic": false,
+      "max_drawdown": 0.02596999986596238
+    },
+    {
+      "day_index": 4,
+      "fill_seed": 42,
+      "path": 11,
+      "deterministic": false,
+      "max_drawdown": 0.024360000036470097
+    },
+    {
+      "day_index": 4,
+      "fill_seed": 42,
+      "path": 12,
+      "deterministic": false,
+      "max_drawdown": 0.02576000004192558
+    },
+    {
+      "day_index": 4,
+      "fill_seed": 42,
+      "path": 13,
+      "deterministic": false,
+      "max_drawdown": 0.03916499991975142
+    },
+    {
+      "day_index": 4,
+      "fill_seed": 42,
+      "path": 14,
+      "deterministic": false,
+      "max_drawdown": 0.028279999864724736
+    },
+    {
+      "day_index": 4,
+      "fill_seed": 42,
+      "path": 15,
+      "deterministic": false,
+      "max_drawdown": 0.02612999993996601
+    },
+    {
+      "day_index": 4,
+      "fill_seed": 42,
+      "path": 16,
+      "deterministic": false,
+      "max_drawdown": 0.036849999925562926
+    },
+    {
+      "day_index": 4,
+      "fill_seed": 42,
+      "path": 17,
+      "deterministic": false,
+      "max_drawdown": 0.02483500000270089
+    },
+    {
+      "day_index": 4,
+      "fill_seed": 42,
+      "path": 18,
+      "deterministic": false,
+      "max_drawdown": 0.03604999994734204
+    },
+    {
+      "day_index": 4,
+      "fill_seed": 42,
+      "path": 19,
+      "deterministic": false,
+      "max_drawdown": 0.033514999950551405
+    },
+    {
+      "day_index": 4,
+      "fill_seed": 43,
+      "path": 0,
+      "deterministic": false,
+      "max_drawdown": 0.02269000003965793
+    },
+    {
+      "day_index": 4,
+      "fill_seed": 43,
+      "path": 1,
+      "deterministic": false,
+      "max_drawdown": 0.024159999960937206
+    },
+    {
+      "day_index": 4,
+      "fill_seed": 43,
+      "path": 2,
+      "deterministic": false,
+      "max_drawdown": 0.028074999908911158
+    },
+    {
+      "day_index": 4,
+      "fill_seed": 43,
+      "path": 3,
+      "deterministic": false,
+      "max_drawdown": 0.02587999980610589
+    },
+    {
+      "day_index": 4,
+      "fill_seed": 43,
+      "path": 4,
+      "deterministic": false,
+      "max_drawdown": 0.027999999924200658
+    },
+    {
+      "day_index": 4,
+      "fill_seed": 43,
+      "path": 5,
+      "deterministic": false,
+      "max_drawdown": 0.025249999929198186
+    },
+    {
+      "day_index": 4,
+      "fill_seed": 43,
+      "path": 6,
+      "deterministic": false,
+      "max_drawdown": 0.029114999946915354
+    },
+    {
+      "day_index": 4,
+      "fill_seed": 43,
+      "path": 7,
+      "deterministic": false,
+      "max_drawdown": 0.026304999941863194
+    },
+    {
+      "day_index": 4,
+      "fill_seed": 43,
+      "path": 8,
+      "deterministic": false,
+      "max_drawdown": 0.035024999829622594
+    },
+    {
+      "day_index": 4,
+      "fill_seed": 43,
+      "path": 9,
+      "deterministic": false,
+      "max_drawdown": 0.03317499990946926
+    },
+    {
+      "day_index": 4,
+      "fill_seed": 43,
+      "path": 10,
+      "deterministic": false,
+      "max_drawdown": 0.028619999913915617
+    },
+    {
+      "day_index": 4,
+      "fill_seed": 43,
+      "path": 11,
+      "deterministic": false,
+      "max_drawdown": 0.026374999851603853
+    },
+    {
+      "day_index": 4,
+      "fill_seed": 43,
+      "path": 12,
+      "deterministic": false,
+      "max_drawdown": 0.03558999980302313
+    },
+    {
+      "day_index": 4,
+      "fill_seed": 43,
+      "path": 13,
+      "deterministic": false,
+      "max_drawdown": 0.02481500003377235
+    },
+    {
+      "day_index": 4,
+      "fill_seed": 43,
+      "path": 14,
+      "deterministic": false,
+      "max_drawdown": 0.029859999874110366
+    },
+    {
+      "day_index": 4,
+      "fill_seed": 43,
+      "path": 15,
+      "deterministic": false,
+      "max_drawdown": 0.028514999929428964
+    },
+    {
+      "day_index": 4,
+      "fill_seed": 43,
+      "path": 16,
+      "deterministic": false,
+      "max_drawdown": 0.025319999935874637
+    },
+    {
+      "day_index": 4,
+      "fill_seed": 43,
+      "path": 17,
+      "deterministic": false,
+      "max_drawdown": 0.024360000019497008
+    },
+    {
+      "day_index": 4,
+      "fill_seed": 43,
+      "path": 18,
+      "deterministic": false,
+      "max_drawdown": 0.033329999834198265
+    },
+    {
+      "day_index": 4,
+      "fill_seed": 43,
+      "path": 19,
+      "deterministic": false,
+      "max_drawdown": 0.03722499994220985
+    },
+    {
+      "day_index": 5,
+      "fill_seed": 42,
+      "path": 0,
+      "deterministic": false,
+      "max_drawdown": 0.031324999935585573
+    },
+    {
+      "day_index": 5,
+      "fill_seed": 42,
+      "path": 1,
+      "deterministic": false,
+      "max_drawdown": 0.024954999941950273
+    },
+    {
+      "day_index": 5,
+      "fill_seed": 42,
+      "path": 2,
+      "deterministic": false,
+      "max_drawdown": 0.029629999788266526
+    },
+    {
+      "day_index": 5,
+      "fill_seed": 42,
+      "path": 3,
+      "deterministic": false,
+      "max_drawdown": 0.032794999910138234
+    },
+    {
+      "day_index": 5,
+      "fill_seed": 42,
+      "path": 4,
+      "deterministic": false,
+      "max_drawdown": 0.030849999885187884
+    },
+    {
+      "day_index": 5,
+      "fill_seed": 42,
+      "path": 5,
+      "deterministic": false,
+      "max_drawdown": 0.03202499990066898
+    },
+    {
+      "day_index": 5,
+      "fill_seed": 42,
+      "path": 6,
+      "deterministic": false,
+      "max_drawdown": 0.03522499986388894
+    },
+    {
+      "day_index": 5,
+      "fill_seed": 42,
+      "path": 7,
+      "deterministic": false,
+      "max_drawdown": 0.031914999916387465
+    },
+    {
+      "day_index": 5,
+      "fill_seed": 42,
+      "path": 8,
+      "deterministic": false,
+      "max_drawdown": 0.027899999865326652
+    },
+    {
+      "day_index": 5,
+      "fill_seed": 42,
+      "path": 9,
+      "deterministic": false,
+      "max_drawdown": 0.021889999985897024
+    },
+    {
+      "day_index": 5,
+      "fill_seed": 42,
+      "path": 10,
+      "deterministic": false,
+      "max_drawdown": 0.0229799999755933
+    },
+    {
+      "day_index": 5,
+      "fill_seed": 42,
+      "path": 11,
+      "deterministic": false,
+      "max_drawdown": 0.029279999941558277
+    },
+    {
+      "day_index": 5,
+      "fill_seed": 42,
+      "path": 12,
+      "deterministic": false,
+      "max_drawdown": 0.03003499990552072
+    },
+    {
+      "day_index": 5,
+      "fill_seed": 42,
+      "path": 13,
+      "deterministic": false,
+      "max_drawdown": 0.030604999931343357
+    },
+    {
+      "day_index": 5,
+      "fill_seed": 42,
+      "path": 14,
+      "deterministic": false,
+      "max_drawdown": 0.022614999981666717
+    },
+    {
+      "day_index": 5,
+      "fill_seed": 42,
+      "path": 15,
+      "deterministic": false,
+      "max_drawdown": 0.02560999994213864
+    },
+    {
+      "day_index": 5,
+      "fill_seed": 42,
+      "path": 16,
+      "deterministic": false,
+      "max_drawdown": 0.03533999996189596
+    },
+    {
+      "day_index": 5,
+      "fill_seed": 42,
+      "path": 17,
+      "deterministic": false,
+      "max_drawdown": 0.021234999982741254
+    },
+    {
+      "day_index": 5,
+      "fill_seed": 42,
+      "path": 18,
+      "deterministic": false,
+      "max_drawdown": 0.02869999991151051
+    },
+    {
+      "day_index": 5,
+      "fill_seed": 42,
+      "path": 19,
+      "deterministic": false,
+      "max_drawdown": 0.026159999919368904
+    },
+    {
+      "day_index": 5,
+      "fill_seed": 43,
+      "path": 0,
+      "deterministic": false,
+      "max_drawdown": 0.030504999907744246
+    },
+    {
+      "day_index": 5,
+      "fill_seed": 43,
+      "path": 1,
+      "deterministic": false,
+      "max_drawdown": 0.029684999887135133
+    },
+    {
+      "day_index": 5,
+      "fill_seed": 43,
+      "path": 2,
+      "deterministic": false,
+      "max_drawdown": 0.026349999822074865
+    },
+    {
+      "day_index": 5,
+      "fill_seed": 43,
+      "path": 3,
+      "deterministic": false,
+      "max_drawdown": 0.024564999950598132
+    },
+    {
+      "day_index": 5,
+      "fill_seed": 43,
+      "path": 4,
+      "deterministic": false,
+      "max_drawdown": 0.02435499982628153
+    },
+    {
+      "day_index": 5,
+      "fill_seed": 43,
+      "path": 5,
+      "deterministic": false,
+      "max_drawdown": 0.021949999910805484
+    },
+    {
+      "day_index": 5,
+      "fill_seed": 43,
+      "path": 6,
+      "deterministic": false,
+      "max_drawdown": 0.021779999812419737
+    },
+    {
+      "day_index": 5,
+      "fill_seed": 43,
+      "path": 7,
+      "deterministic": false,
+      "max_drawdown": 0.023189999974679854
+    },
+    {
+      "day_index": 5,
+      "fill_seed": 43,
+      "path": 8,
+      "deterministic": false,
+      "max_drawdown": 0.03177499978676712
+    },
+    {
+      "day_index": 5,
+      "fill_seed": 43,
+      "path": 9,
+      "deterministic": false,
+      "max_drawdown": 0.031174999978293094
+    },
+    {
+      "day_index": 5,
+      "fill_seed": 43,
+      "path": 10,
+      "deterministic": false,
+      "max_drawdown": 0.029549999963349283
+    },
+    {
+      "day_index": 5,
+      "fill_seed": 43,
+      "path": 11,
+      "deterministic": false,
+      "max_drawdown": 0.027439999915568336
+    },
+    {
+      "day_index": 5,
+      "fill_seed": 43,
+      "path": 12,
+      "deterministic": false,
+      "max_drawdown": 0.024994999951007735
+    },
+    {
+      "day_index": 5,
+      "fill_seed": 43,
+      "path": 13,
+      "deterministic": false,
+      "max_drawdown": 0.025044999933979906
+    },
+    {
+      "day_index": 5,
+      "fill_seed": 43,
+      "path": 14,
+      "deterministic": false,
+      "max_drawdown": 0.04081999992758423
+    },
+    {
+      "day_index": 5,
+      "fill_seed": 43,
+      "path": 15,
+      "deterministic": false,
+      "max_drawdown": 0.028739999990853526
+    },
+    {
+      "day_index": 5,
+      "fill_seed": 43,
+      "path": 16,
+      "deterministic": false,
+      "max_drawdown": 0.027659999961582526
+    },
+    {
+      "day_index": 5,
+      "fill_seed": 43,
+      "path": 17,
+      "deterministic": false,
+      "max_drawdown": 0.027329999997724563
+    },
+    {
+      "day_index": 5,
+      "fill_seed": 43,
+      "path": 18,
+      "deterministic": false,
+      "max_drawdown": 0.04121499993953037
+    },
+    {
+      "day_index": 5,
+      "fill_seed": 43,
+      "path": 19,
+      "deterministic": false,
+      "max_drawdown": 0.040759999923587475
+    },
+    {
+      "day_index": 0,
+      "fill_seed": 42,
+      "path": 0,
+      "deterministic": true,
+      "max_drawdown": 0.0505449998577987
+    },
+    {
+      "day_index": 0,
+      "fill_seed": 42,
+      "path": 1,
+      "deterministic": true,
+      "max_drawdown": 0.04166999981856678
+    },
+    {
+      "day_index": 0,
+      "fill_seed": 42,
+      "path": 2,
+      "deterministic": true,
+      "max_drawdown": 0.0488349998769495
+    },
+    {
+      "day_index": 0,
+      "fill_seed": 42,
+      "path": 3,
+      "deterministic": true,
+      "max_drawdown": 0.040519999776469806
+    },
+    {
+      "day_index": 0,
+      "fill_seed": 42,
+      "path": 4,
+      "deterministic": true,
+      "max_drawdown": 0.04895499991984309
+    },
+    {
+      "day_index": 0,
+      "fill_seed": 42,
+      "path": 5,
+      "deterministic": true,
+      "max_drawdown": 0.03812499988169615
+    },
+    {
+      "day_index": 0,
+      "fill_seed": 42,
+      "path": 6,
+      "deterministic": true,
+      "max_drawdown": 0.049224999936571034
+    },
+    {
+      "day_index": 0,
+      "fill_seed": 42,
+      "path": 7,
+      "deterministic": true,
+      "max_drawdown": 0.045894999917719836
+    },
+    {
+      "day_index": 0,
+      "fill_seed": 42,
+      "path": 8,
+      "deterministic": true,
+      "max_drawdown": 0.037534999869034635
+    },
+    {
+      "day_index": 0,
+      "fill_seed": 42,
+      "path": 9,
+      "deterministic": true,
+      "max_drawdown": 0.03661999990623066
+    },
+    {
+      "day_index": 0,
+      "fill_seed": 42,
+      "path": 10,
+      "deterministic": true,
+      "max_drawdown": 0.042984999837686555
+    },
+    {
+      "day_index": 0,
+      "fill_seed": 42,
+      "path": 11,
+      "deterministic": true,
+      "max_drawdown": 0.03883499988892902
+    },
+    {
+      "day_index": 0,
+      "fill_seed": 42,
+      "path": 12,
+      "deterministic": true,
+      "max_drawdown": 0.04394499986527345
+    },
+    {
+      "day_index": 0,
+      "fill_seed": 42,
+      "path": 13,
+      "deterministic": true,
+      "max_drawdown": 0.0463749999043892
+    },
+    {
+      "day_index": 0,
+      "fill_seed": 42,
+      "path": 14,
+      "deterministic": true,
+      "max_drawdown": 0.04377499984122202
+    },
+    {
+      "day_index": 0,
+      "fill_seed": 42,
+      "path": 15,
+      "deterministic": true,
+      "max_drawdown": 0.036784999873508806
+    },
+    {
+      "day_index": 0,
+      "fill_seed": 42,
+      "path": 16,
+      "deterministic": true,
+      "max_drawdown": 0.03872999986928827
+    },
+    {
+      "day_index": 0,
+      "fill_seed": 42,
+      "path": 17,
+      "deterministic": true,
+      "max_drawdown": 0.03856999987904608
+    },
+    {
+      "day_index": 0,
+      "fill_seed": 42,
+      "path": 18,
+      "deterministic": true,
+      "max_drawdown": 0.043064999793068104
+    },
+    {
+      "day_index": 0,
+      "fill_seed": 42,
+      "path": 19,
+      "deterministic": true,
+      "max_drawdown": 0.04717499993490559
+    },
+    {
+      "day_index": 0,
+      "fill_seed": 43,
+      "path": 0,
+      "deterministic": true,
+      "max_drawdown": 0.04521499989630673
+    },
+    {
+      "day_index": 0,
+      "fill_seed": 43,
+      "path": 1,
+      "deterministic": true,
+      "max_drawdown": 0.045259999884093904
+    },
+    {
+      "day_index": 0,
+      "fill_seed": 43,
+      "path": 2,
+      "deterministic": true,
+      "max_drawdown": 0.04477999986823611
+    },
+    {
+      "day_index": 0,
+      "fill_seed": 43,
+      "path": 3,
+      "deterministic": true,
+      "max_drawdown": 0.05222999985146082
+    },
+    {
+      "day_index": 0,
+      "fill_seed": 43,
+      "path": 4,
+      "deterministic": true,
+      "max_drawdown": 0.044374999906356294
+    },
+    {
+      "day_index": 0,
+      "fill_seed": 43,
+      "path": 5,
+      "deterministic": true,
+      "max_drawdown": 0.04411999991481608
+    },
+    {
+      "day_index": 0,
+      "fill_seed": 43,
+      "path": 6,
+      "deterministic": true,
+      "max_drawdown": 0.040769999841712146
+    },
+    {
+      "day_index": 0,
+      "fill_seed": 43,
+      "path": 7,
+      "deterministic": true,
+      "max_drawdown": 0.042024999815705844
+    },
+    {
+      "day_index": 0,
+      "fill_seed": 43,
+      "path": 8,
+      "deterministic": true,
+      "max_drawdown": 0.04328499985292389
+    },
+    {
+      "day_index": 0,
+      "fill_seed": 43,
+      "path": 9,
+      "deterministic": true,
+      "max_drawdown": 0.04521499985108335
+    },
+    {
+      "day_index": 0,
+      "fill_seed": 43,
+      "path": 10,
+      "deterministic": true,
+      "max_drawdown": 0.04204499990307253
+    },
+    {
+      "day_index": 0,
+      "fill_seed": 43,
+      "path": 11,
+      "deterministic": true,
+      "max_drawdown": 0.05108999979349749
+    },
+    {
+      "day_index": 0,
+      "fill_seed": 43,
+      "path": 12,
+      "deterministic": true,
+      "max_drawdown": 0.04654499987760863
+    },
+    {
+      "day_index": 0,
+      "fill_seed": 43,
+      "path": 13,
+      "deterministic": true,
+      "max_drawdown": 0.0364249998716919
+    },
+    {
+      "day_index": 0,
+      "fill_seed": 43,
+      "path": 14,
+      "deterministic": true,
+      "max_drawdown": 0.04035999984624805
+    },
+    {
+      "day_index": 0,
+      "fill_seed": 43,
+      "path": 15,
+      "deterministic": true,
+      "max_drawdown": 0.046389999910519286
+    },
+    {
+      "day_index": 0,
+      "fill_seed": 43,
+      "path": 16,
+      "deterministic": true,
+      "max_drawdown": 0.04179499980127899
+    },
+    {
+      "day_index": 0,
+      "fill_seed": 43,
+      "path": 17,
+      "deterministic": true,
+      "max_drawdown": 0.05002499989576714
+    },
+    {
+      "day_index": 0,
+      "fill_seed": 43,
+      "path": 18,
+      "deterministic": true,
+      "max_drawdown": 0.032414999811615
+    },
+    {
+      "day_index": 0,
+      "fill_seed": 43,
+      "path": 19,
+      "deterministic": true,
+      "max_drawdown": 0.042154999919514324
+    },
+    {
+      "day_index": 1,
+      "fill_seed": 42,
+      "path": 0,
+      "deterministic": true,
+      "max_drawdown": 0.03134000019199279
+    },
+    {
+      "day_index": 1,
+      "fill_seed": 42,
+      "path": 1,
+      "deterministic": true,
+      "max_drawdown": 0.032555000138410506
+    },
+    {
+      "day_index": 1,
+      "fill_seed": 42,
+      "path": 2,
+      "deterministic": true,
+      "max_drawdown": 0.03591500009551396
+    },
+    {
+      "day_index": 1,
+      "fill_seed": 42,
+      "path": 3,
+      "deterministic": true,
+      "max_drawdown": 0.03003500038066731
+    },
+    {
+      "day_index": 1,
+      "fill_seed": 42,
+      "path": 4,
+      "deterministic": true,
+      "max_drawdown": 0.0341200001230213
+    },
+    {
+      "day_index": 1,
+      "fill_seed": 42,
+      "path": 5,
+      "deterministic": true,
+      "max_drawdown": 0.034375000124161836
+    },
+    {
+      "day_index": 1,
+      "fill_seed": 42,
+      "path": 6,
+      "deterministic": true,
+      "max_drawdown": 0.03248000015166985
+    },
+    {
+      "day_index": 1,
+      "fill_seed": 42,
+      "path": 7,
+      "deterministic": true,
+      "max_drawdown": 0.03282499996733179
+    },
+    {
+      "day_index": 1,
+      "fill_seed": 42,
+      "path": 8,
+      "deterministic": true,
+      "max_drawdown": 0.0334000001432857
+    },
+    {
+      "day_index": 1,
+      "fill_seed": 42,
+      "path": 9,
+      "deterministic": true,
+      "max_drawdown": 0.03198000030121806
+    },
+    {
+      "day_index": 1,
+      "fill_seed": 42,
+      "path": 10,
+      "deterministic": true,
+      "max_drawdown": 0.03229000000236493
+    },
+    {
+      "day_index": 1,
+      "fill_seed": 42,
+      "path": 11,
+      "deterministic": true,
+      "max_drawdown": 0.03265000034351395
+    },
+    {
+      "day_index": 1,
+      "fill_seed": 42,
+      "path": 12,
+      "deterministic": true,
+      "max_drawdown": 0.035409999994233665
+    },
+    {
+      "day_index": 1,
+      "fill_seed": 42,
+      "path": 13,
+      "deterministic": true,
+      "max_drawdown": 0.030625000145833248
+    },
+    {
+      "day_index": 1,
+      "fill_seed": 42,
+      "path": 14,
+      "deterministic": true,
+      "max_drawdown": 0.03228000010053789
+    },
+    {
+      "day_index": 1,
+      "fill_seed": 42,
+      "path": 15,
+      "deterministic": true,
+      "max_drawdown": 0.0333150001124376
+    },
+    {
+      "day_index": 1,
+      "fill_seed": 42,
+      "path": 16,
+      "deterministic": true,
+      "max_drawdown": 0.031839999931000396
+    },
+    {
+      "day_index": 1,
+      "fill_seed": 42,
+      "path": 17,
+      "deterministic": true,
+      "max_drawdown": 0.03025500016235627
+    },
+    {
+      "day_index": 1,
+      "fill_seed": 42,
+      "path": 18,
+      "deterministic": true,
+      "max_drawdown": 0.03502000032966324
+    },
+    {
+      "day_index": 1,
+      "fill_seed": 42,
+      "path": 19,
+      "deterministic": true,
+      "max_drawdown": 0.03432000011453562
+    },
+    {
+      "day_index": 1,
+      "fill_seed": 43,
+      "path": 0,
+      "deterministic": true,
+      "max_drawdown": 0.03385499995781904
+    },
+    {
+      "day_index": 1,
+      "fill_seed": 43,
+      "path": 1,
+      "deterministic": true,
+      "max_drawdown": 0.031305000142549666
+    },
+    {
+      "day_index": 1,
+      "fill_seed": 43,
+      "path": 2,
+      "deterministic": true,
+      "max_drawdown": 0.027909999903686256
+    },
+    {
+      "day_index": 1,
+      "fill_seed": 43,
+      "path": 3,
+      "deterministic": true,
+      "max_drawdown": 0.0339800003520514
+    },
+    {
+      "day_index": 1,
+      "fill_seed": 43,
+      "path": 4,
+      "deterministic": true,
+      "max_drawdown": 0.03542000025155856
+    },
+    {
+      "day_index": 1,
+      "fill_seed": 43,
+      "path": 5,
+      "deterministic": true,
+      "max_drawdown": 0.03281500011845173
+    },
+    {
+      "day_index": 1,
+      "fill_seed": 43,
+      "path": 6,
+      "deterministic": true,
+      "max_drawdown": 0.037954999531825795
+    },
+    {
+      "day_index": 1,
+      "fill_seed": 43,
+      "path": 7,
+      "deterministic": true,
+      "max_drawdown": 0.03239499985832062
+    },
+    {
+      "day_index": 1,
+      "fill_seed": 43,
+      "path": 8,
+      "deterministic": true,
+      "max_drawdown": 0.02992500015073629
+    },
+    {
+      "day_index": 1,
+      "fill_seed": 43,
+      "path": 9,
+      "deterministic": true,
+      "max_drawdown": 0.03021499991020593
+    },
+    {
+      "day_index": 1,
+      "fill_seed": 43,
+      "path": 10,
+      "deterministic": true,
+      "max_drawdown": 0.030675000125980567
+    },
+    {
+      "day_index": 1,
+      "fill_seed": 43,
+      "path": 11,
+      "deterministic": true,
+      "max_drawdown": 0.05024499989766684
+    },
+    {
+      "day_index": 1,
+      "fill_seed": 43,
+      "path": 12,
+      "deterministic": true,
+      "max_drawdown": 0.027835000369761165
+    },
+    {
+      "day_index": 1,
+      "fill_seed": 43,
+      "path": 13,
+      "deterministic": true,
+      "max_drawdown": 0.029910000120745295
+    },
+    {
+      "day_index": 1,
+      "fill_seed": 43,
+      "path": 14,
+      "deterministic": true,
+      "max_drawdown": 0.031215000189085185
+    },
+    {
+      "day_index": 1,
+      "fill_seed": 43,
+      "path": 15,
+      "deterministic": true,
+      "max_drawdown": 0.03252500011769355
+    },
+    {
+      "day_index": 1,
+      "fill_seed": 43,
+      "path": 16,
+      "deterministic": true,
+      "max_drawdown": 0.031280000111094886
+    },
+    {
+      "day_index": 1,
+      "fill_seed": 43,
+      "path": 17,
+      "deterministic": true,
+      "max_drawdown": 0.03502000010998918
+    },
+    {
+      "day_index": 1,
+      "fill_seed": 43,
+      "path": 18,
+      "deterministic": true,
+      "max_drawdown": 0.031975000182061564
+    },
+    {
+      "day_index": 1,
+      "fill_seed": 43,
+      "path": 19,
+      "deterministic": true,
+      "max_drawdown": 0.03530999999929163
+    },
+    {
+      "day_index": 2,
+      "fill_seed": 42,
+      "path": 0,
+      "deterministic": true,
+      "max_drawdown": 0.07092999954069557
+    },
+    {
+      "day_index": 2,
+      "fill_seed": 42,
+      "path": 1,
+      "deterministic": true,
+      "max_drawdown": 0.0935549998264209
+    },
+    {
+      "day_index": 2,
+      "fill_seed": 42,
+      "path": 2,
+      "deterministic": true,
+      "max_drawdown": 0.11292999989265695
+    },
+    {
+      "day_index": 2,
+      "fill_seed": 42,
+      "path": 3,
+      "deterministic": true,
+      "max_drawdown": 0.10139999983933423
+    },
+    {
+      "day_index": 2,
+      "fill_seed": 42,
+      "path": 4,
+      "deterministic": true,
+      "max_drawdown": 0.08944499997850563
+    },
+    {
+      "day_index": 2,
+      "fill_seed": 42,
+      "path": 5,
+      "deterministic": true,
+      "max_drawdown": 0.08667999983237618
+    },
+    {
+      "day_index": 2,
+      "fill_seed": 42,
+      "path": 6,
+      "deterministic": true,
+      "max_drawdown": 0.05863999996129543
+    },
+    {
+      "day_index": 2,
+      "fill_seed": 42,
+      "path": 7,
+      "deterministic": true,
+      "max_drawdown": 0.08769999991725119
+    },
+    {
+      "day_index": 2,
+      "fill_seed": 42,
+      "path": 8,
+      "deterministic": true,
+      "max_drawdown": 0.07707500003018808
+    },
+    {
+      "day_index": 2,
+      "fill_seed": 42,
+      "path": 9,
+      "deterministic": true,
+      "max_drawdown": 0.1077649996920742
+    },
+    {
+      "day_index": 2,
+      "fill_seed": 42,
+      "path": 10,
+      "deterministic": true,
+      "max_drawdown": 0.08093999990977041
+    },
+    {
+      "day_index": 2,
+      "fill_seed": 42,
+      "path": 11,
+      "deterministic": true,
+      "max_drawdown": 0.08632999991845125
+    },
+    {
+      "day_index": 2,
+      "fill_seed": 42,
+      "path": 12,
+      "deterministic": true,
+      "max_drawdown": 0.113289999896377
+    },
+    {
+      "day_index": 2,
+      "fill_seed": 42,
+      "path": 13,
+      "deterministic": true,
+      "max_drawdown": 0.07949999999910595
+    },
+    {
+      "day_index": 2,
+      "fill_seed": 42,
+      "path": 14,
+      "deterministic": true,
+      "max_drawdown": 0.10286500006414667
+    },
+    {
+      "day_index": 2,
+      "fill_seed": 42,
+      "path": 15,
+      "deterministic": true,
+      "max_drawdown": 0.10297499993682369
+    },
+    {
+      "day_index": 2,
+      "fill_seed": 42,
+      "path": 16,
+      "deterministic": true,
+      "max_drawdown": 0.10057999994508737
+    },
+    {
+      "day_index": 2,
+      "fill_seed": 42,
+      "path": 17,
+      "deterministic": true,
+      "max_drawdown": 0.06404499996783963
+    },
+    {
+      "day_index": 2,
+      "fill_seed": 42,
+      "path": 18,
+      "deterministic": true,
+      "max_drawdown": 0.079799999976502
+    },
+    {
+      "day_index": 2,
+      "fill_seed": 42,
+      "path": 19,
+      "deterministic": true,
+      "max_drawdown": 0.08782999988403883
+    },
+    {
+      "day_index": 2,
+      "fill_seed": 43,
+      "path": 0,
+      "deterministic": true,
+      "max_drawdown": 0.07330499985561767
+    },
+    {
+      "day_index": 2,
+      "fill_seed": 43,
+      "path": 1,
+      "deterministic": true,
+      "max_drawdown": 0.0768999998822677
+    },
+    {
+      "day_index": 2,
+      "fill_seed": 43,
+      "path": 2,
+      "deterministic": true,
+      "max_drawdown": 0.09722499994621181
+    },
+    {
+      "day_index": 2,
+      "fill_seed": 43,
+      "path": 3,
+      "deterministic": true,
+      "max_drawdown": 0.08816999997561403
+    },
+    {
+      "day_index": 2,
+      "fill_seed": 43,
+      "path": 4,
+      "deterministic": true,
+      "max_drawdown": 0.06342999990572595
+    },
+    {
+      "day_index": 2,
+      "fill_seed": 43,
+      "path": 5,
+      "deterministic": true,
+      "max_drawdown": 0.07677499981572611
+    },
+    {
+      "day_index": 2,
+      "fill_seed": 43,
+      "path": 6,
+      "deterministic": true,
+      "max_drawdown": 0.06685499994011224
+    },
+    {
+      "day_index": 2,
+      "fill_seed": 43,
+      "path": 7,
+      "deterministic": true,
+      "max_drawdown": 0.07564499999866969
+    },
+    {
+      "day_index": 2,
+      "fill_seed": 43,
+      "path": 8,
+      "deterministic": true,
+      "max_drawdown": 0.08324999991749671
+    },
+    {
+      "day_index": 2,
+      "fill_seed": 43,
+      "path": 9,
+      "deterministic": true,
+      "max_drawdown": 0.08805999988115998
+    },
+    {
+      "day_index": 2,
+      "fill_seed": 43,
+      "path": 10,
+      "deterministic": true,
+      "max_drawdown": 0.07086499983494354
+    },
+    {
+      "day_index": 2,
+      "fill_seed": 43,
+      "path": 11,
+      "deterministic": true,
+      "max_drawdown": 0.07371999993401168
+    },
+    {
+      "day_index": 2,
+      "fill_seed": 43,
+      "path": 12,
+      "deterministic": true,
+      "max_drawdown": 0.10605999988460812
+    },
+    {
+      "day_index": 2,
+      "fill_seed": 43,
+      "path": 13,
+      "deterministic": true,
+      "max_drawdown": 0.10038000001663283
+    },
+    {
+      "day_index": 2,
+      "fill_seed": 43,
+      "path": 14,
+      "deterministic": true,
+      "max_drawdown": 0.08391499996993401
+    },
+    {
+      "day_index": 2,
+      "fill_seed": 43,
+      "path": 15,
+      "deterministic": true,
+      "max_drawdown": 0.0671349998170272
+    },
+    {
+      "day_index": 2,
+      "fill_seed": 43,
+      "path": 16,
+      "deterministic": true,
+      "max_drawdown": 0.09943999949625448
+    },
+    {
+      "day_index": 2,
+      "fill_seed": 43,
+      "path": 17,
+      "deterministic": true,
+      "max_drawdown": 0.08052499995166951
+    },
+    {
+      "day_index": 2,
+      "fill_seed": 43,
+      "path": 18,
+      "deterministic": true,
+      "max_drawdown": 0.11856000001683498
+    },
+    {
+      "day_index": 2,
+      "fill_seed": 43,
+      "path": 19,
+      "deterministic": true,
+      "max_drawdown": 0.08608500006956166
+    },
+    {
+      "day_index": 3,
+      "fill_seed": 42,
+      "path": 0,
+      "deterministic": true,
+      "max_drawdown": 0.074439999884782
+    },
+    {
+      "day_index": 3,
+      "fill_seed": 42,
+      "path": 1,
+      "deterministic": true,
+      "max_drawdown": 0.0629599998183834
+    },
+    {
+      "day_index": 3,
+      "fill_seed": 42,
+      "path": 2,
+      "deterministic": true,
+      "max_drawdown": 0.0789950000002575
+    },
+    {
+      "day_index": 3,
+      "fill_seed": 42,
+      "path": 3,
+      "deterministic": true,
+      "max_drawdown": 0.05815499992955919
+    },
+    {
+      "day_index": 3,
+      "fill_seed": 42,
+      "path": 4,
+      "deterministic": true,
+      "max_drawdown": 0.06712499991172383
+    },
+    {
+      "day_index": 3,
+      "fill_seed": 42,
+      "path": 5,
+      "deterministic": true,
+      "max_drawdown": 0.06558499990511635
+    },
+    {
+      "day_index": 3,
+      "fill_seed": 42,
+      "path": 6,
+      "deterministic": true,
+      "max_drawdown": 0.05204999989775849
+    },
+    {
+      "day_index": 3,
+      "fill_seed": 42,
+      "path": 7,
+      "deterministic": true,
+      "max_drawdown": 0.047499999792387726
+    },
+    {
+      "day_index": 3,
+      "fill_seed": 42,
+      "path": 8,
+      "deterministic": true,
+      "max_drawdown": 0.105149999785346
+    },
+    {
+      "day_index": 3,
+      "fill_seed": 42,
+      "path": 9,
+      "deterministic": true,
+      "max_drawdown": 0.07498499967365957
+    },
+    {
+      "day_index": 3,
+      "fill_seed": 42,
+      "path": 10,
+      "deterministic": true,
+      "max_drawdown": 0.07702499978363786
+    },
+    {
+      "day_index": 3,
+      "fill_seed": 42,
+      "path": 11,
+      "deterministic": true,
+      "max_drawdown": 0.04310999993811482
+    },
+    {
+      "day_index": 3,
+      "fill_seed": 42,
+      "path": 12,
+      "deterministic": true,
+      "max_drawdown": 0.09712999987513182
+    },
+    {
+      "day_index": 3,
+      "fill_seed": 42,
+      "path": 13,
+      "deterministic": true,
+      "max_drawdown": 0.06813999990265662
+    },
+    {
+      "day_index": 3,
+      "fill_seed": 42,
+      "path": 14,
+      "deterministic": true,
+      "max_drawdown": 0.11925499984304544
+    },
+    {
+      "day_index": 3,
+      "fill_seed": 42,
+      "path": 15,
+      "deterministic": true,
+      "max_drawdown": 0.08341499981805423
+    },
+    {
+      "day_index": 3,
+      "fill_seed": 42,
+      "path": 16,
+      "deterministic": true,
+      "max_drawdown": 0.09075999978235538
+    },
+    {
+      "day_index": 3,
+      "fill_seed": 42,
+      "path": 17,
+      "deterministic": true,
+      "max_drawdown": 0.0539749999266661
+    },
+    {
+      "day_index": 3,
+      "fill_seed": 42,
+      "path": 18,
+      "deterministic": true,
+      "max_drawdown": 0.07357499983660487
+    },
+    {
+      "day_index": 3,
+      "fill_seed": 42,
+      "path": 19,
+      "deterministic": true,
+      "max_drawdown": 0.08406999971931439
+    },
+    {
+      "day_index": 3,
+      "fill_seed": 43,
+      "path": 0,
+      "deterministic": true,
+      "max_drawdown": 0.06776999981534959
+    },
+    {
+      "day_index": 3,
+      "fill_seed": 43,
+      "path": 1,
+      "deterministic": true,
+      "max_drawdown": 0.04539499995947516
+    },
+    {
+      "day_index": 3,
+      "fill_seed": 43,
+      "path": 2,
+      "deterministic": true,
+      "max_drawdown": 0.05643999993369686
+    },
+    {
+      "day_index": 3,
+      "fill_seed": 43,
+      "path": 3,
+      "deterministic": true,
+      "max_drawdown": 0.06688499976302253
+    },
+    {
+      "day_index": 3,
+      "fill_seed": 43,
+      "path": 4,
+      "deterministic": true,
+      "max_drawdown": 0.10425499975347785
+    },
+    {
+      "day_index": 3,
+      "fill_seed": 43,
+      "path": 5,
+      "deterministic": true,
+      "max_drawdown": 0.0707899999311632
+    },
+    {
+      "day_index": 3,
+      "fill_seed": 43,
+      "path": 6,
+      "deterministic": true,
+      "max_drawdown": 0.05544499992486651
+    },
+    {
+      "day_index": 3,
+      "fill_seed": 43,
+      "path": 7,
+      "deterministic": true,
+      "max_drawdown": 0.042889999972209436
+    },
+    {
+      "day_index": 3,
+      "fill_seed": 43,
+      "path": 8,
+      "deterministic": true,
+      "max_drawdown": 0.07123999973804596
+    },
+    {
+      "day_index": 3,
+      "fill_seed": 43,
+      "path": 9,
+      "deterministic": true,
+      "max_drawdown": 0.08435999974494335
+    },
+    {
+      "day_index": 3,
+      "fill_seed": 43,
+      "path": 10,
+      "deterministic": true,
+      "max_drawdown": 0.10920999990719737
+    },
+    {
+      "day_index": 3,
+      "fill_seed": 43,
+      "path": 11,
+      "deterministic": true,
+      "max_drawdown": 0.08210499993298015
+    },
+    {
+      "day_index": 3,
+      "fill_seed": 43,
+      "path": 12,
+      "deterministic": true,
+      "max_drawdown": 0.07025499998032636
+    },
+    {
+      "day_index": 3,
+      "fill_seed": 43,
+      "path": 13,
+      "deterministic": true,
+      "max_drawdown": 0.07704499971227685
+    },
+    {
+      "day_index": 3,
+      "fill_seed": 43,
+      "path": 14,
+      "deterministic": true,
+      "max_drawdown": 0.10225999963543586
+    },
+    {
+      "day_index": 3,
+      "fill_seed": 43,
+      "path": 15,
+      "deterministic": true,
+      "max_drawdown": 0.08597499970280653
+    },
+    {
+      "day_index": 3,
+      "fill_seed": 43,
+      "path": 16,
+      "deterministic": true,
+      "max_drawdown": 0.07107999991787484
+    },
+    {
+      "day_index": 3,
+      "fill_seed": 43,
+      "path": 17,
+      "deterministic": true,
+      "max_drawdown": 0.0877399999250923
+    },
+    {
+      "day_index": 3,
+      "fill_seed": 43,
+      "path": 18,
+      "deterministic": true,
+      "max_drawdown": 0.04749999994317333
+    },
+    {
+      "day_index": 3,
+      "fill_seed": 43,
+      "path": 19,
+      "deterministic": true,
+      "max_drawdown": 0.05323999993094497
+    },
+    {
+      "day_index": 4,
+      "fill_seed": 42,
+      "path": 0,
+      "deterministic": true,
+      "max_drawdown": 0.027654999946610914
+    },
+    {
+      "day_index": 4,
+      "fill_seed": 42,
+      "path": 1,
+      "deterministic": true,
+      "max_drawdown": 0.026875000098282698
+    },
+    {
+      "day_index": 4,
+      "fill_seed": 42,
+      "path": 2,
+      "deterministic": true,
+      "max_drawdown": 0.02887499980527375
+    },
+    {
+      "day_index": 4,
+      "fill_seed": 42,
+      "path": 3,
+      "deterministic": true,
+      "max_drawdown": 0.026360000022076502
+    },
+    {
+      "day_index": 4,
+      "fill_seed": 42,
+      "path": 4,
+      "deterministic": true,
+      "max_drawdown": 0.03146999985726251
+    },
+    {
+      "day_index": 4,
+      "fill_seed": 42,
+      "path": 5,
+      "deterministic": true,
+      "max_drawdown": 0.04074499953041588
+    },
+    {
+      "day_index": 4,
+      "fill_seed": 42,
+      "path": 6,
+      "deterministic": true,
+      "max_drawdown": 0.027269999920153
+    },
+    {
+      "day_index": 4,
+      "fill_seed": 42,
+      "path": 7,
+      "deterministic": true,
+      "max_drawdown": 0.028044999770405976
+    },
+    {
+      "day_index": 4,
+      "fill_seed": 42,
+      "path": 8,
+      "deterministic": true,
+      "max_drawdown": 0.036554999868940063
+    },
+    {
+      "day_index": 4,
+      "fill_seed": 42,
+      "path": 9,
+      "deterministic": true,
+      "max_drawdown": 0.0396399998526924
+    },
+    {
+      "day_index": 4,
+      "fill_seed": 42,
+      "path": 10,
+      "deterministic": true,
+      "max_drawdown": 0.03843499987472798
+    },
+    {
+      "day_index": 4,
+      "fill_seed": 42,
+      "path": 11,
+      "deterministic": true,
+      "max_drawdown": 0.027769999748553875
+    },
+    {
+      "day_index": 4,
+      "fill_seed": 42,
+      "path": 12,
+      "deterministic": true,
+      "max_drawdown": 0.03229999991742871
+    },
+    {
+      "day_index": 4,
+      "fill_seed": 42,
+      "path": 13,
+      "deterministic": true,
+      "max_drawdown": 0.0402749996445011
+    },
+    {
+      "day_index": 4,
+      "fill_seed": 42,
+      "path": 14,
+      "deterministic": true,
+      "max_drawdown": 0.028369999856690864
+    },
+    {
+      "day_index": 4,
+      "fill_seed": 42,
+      "path": 15,
+      "deterministic": true,
+      "max_drawdown": 0.02923499991816314
+    },
+    {
+      "day_index": 4,
+      "fill_seed": 42,
+      "path": 16,
+      "deterministic": true,
+      "max_drawdown": 0.039559999920459
+    },
+    {
+      "day_index": 4,
+      "fill_seed": 42,
+      "path": 17,
+      "deterministic": true,
+      "max_drawdown": 0.03349999984076968
+    },
+    {
+      "day_index": 4,
+      "fill_seed": 42,
+      "path": 18,
+      "deterministic": true,
+      "max_drawdown": 0.03695999987761489
+    },
+    {
+      "day_index": 4,
+      "fill_seed": 42,
+      "path": 19,
+      "deterministic": true,
+      "max_drawdown": 0.029384999941052703
+    },
+    {
+      "day_index": 4,
+      "fill_seed": 43,
+      "path": 0,
+      "deterministic": true,
+      "max_drawdown": 0.03813499996894665
+    },
+    {
+      "day_index": 4,
+      "fill_seed": 43,
+      "path": 1,
+      "deterministic": true,
+      "max_drawdown": 0.025319999978672847
+    },
+    {
+      "day_index": 4,
+      "fill_seed": 43,
+      "path": 2,
+      "deterministic": true,
+      "max_drawdown": 0.028849999860835362
+    },
+    {
+      "day_index": 4,
+      "fill_seed": 43,
+      "path": 3,
+      "deterministic": true,
+      "max_drawdown": 0.024790000094570885
+    },
+    {
+      "day_index": 4,
+      "fill_seed": 43,
+      "path": 4,
+      "deterministic": true,
+      "max_drawdown": 0.028904999950349897
+    },
+    {
+      "day_index": 4,
+      "fill_seed": 43,
+      "path": 5,
+      "deterministic": true,
+      "max_drawdown": 0.030304999927357912
+    },
+    {
+      "day_index": 4,
+      "fill_seed": 43,
+      "path": 6,
+      "deterministic": true,
+      "max_drawdown": 0.030644999915384386
+    },
+    {
+      "day_index": 4,
+      "fill_seed": 43,
+      "path": 7,
+      "deterministic": true,
+      "max_drawdown": 0.029574999788699152
+    },
+    {
+      "day_index": 4,
+      "fill_seed": 43,
+      "path": 8,
+      "deterministic": true,
+      "max_drawdown": 0.04515499980395543
+    },
+    {
+      "day_index": 4,
+      "fill_seed": 43,
+      "path": 9,
+      "deterministic": true,
+      "max_drawdown": 0.035319999943500324
+    },
+    {
+      "day_index": 4,
+      "fill_seed": 43,
+      "path": 10,
+      "deterministic": true,
+      "max_drawdown": 0.02802499978025863
+    },
+    {
+      "day_index": 4,
+      "fill_seed": 43,
+      "path": 11,
+      "deterministic": true,
+      "max_drawdown": 0.03179999997953287
+    },
+    {
+      "day_index": 4,
+      "fill_seed": 43,
+      "path": 12,
+      "deterministic": true,
+      "max_drawdown": 0.03813499979531798
+    },
+    {
+      "day_index": 4,
+      "fill_seed": 43,
+      "path": 13,
+      "deterministic": true,
+      "max_drawdown": 0.026499999695230425
+    },
+    {
+      "day_index": 4,
+      "fill_seed": 43,
+      "path": 14,
+      "deterministic": true,
+      "max_drawdown": 0.03124999985046628
+    },
+    {
+      "day_index": 4,
+      "fill_seed": 43,
+      "path": 15,
+      "deterministic": true,
+      "max_drawdown": 0.027904999803729957
+    },
+    {
+      "day_index": 4,
+      "fill_seed": 43,
+      "path": 16,
+      "deterministic": true,
+      "max_drawdown": 0.03412999987523335
+    },
+    {
+      "day_index": 4,
+      "fill_seed": 43,
+      "path": 17,
+      "deterministic": true,
+      "max_drawdown": 0.023420000048198553
+    },
+    {
+      "day_index": 4,
+      "fill_seed": 43,
+      "path": 18,
+      "deterministic": true,
+      "max_drawdown": 0.03382999974835332
+    },
+    {
+      "day_index": 4,
+      "fill_seed": 43,
+      "path": 19,
+      "deterministic": true,
+      "max_drawdown": 0.04065999992030811
+    },
+    {
+      "day_index": 5,
+      "fill_seed": 42,
+      "path": 0,
+      "deterministic": true,
+      "max_drawdown": 0.03388999992590991
+    },
+    {
+      "day_index": 5,
+      "fill_seed": 42,
+      "path": 1,
+      "deterministic": true,
+      "max_drawdown": 0.027169999920198418
+    },
+    {
+      "day_index": 5,
+      "fill_seed": 42,
+      "path": 2,
+      "deterministic": true,
+      "max_drawdown": 0.035044999828612866
+    },
+    {
+      "day_index": 5,
+      "fill_seed": 42,
+      "path": 3,
+      "deterministic": true,
+      "max_drawdown": 0.03355999990096992
+    },
+    {
+      "day_index": 5,
+      "fill_seed": 42,
+      "path": 4,
+      "deterministic": true,
+      "max_drawdown": 0.04084499990436452
+    },
+    {
+      "day_index": 5,
+      "fill_seed": 42,
+      "path": 5,
+      "deterministic": true,
+      "max_drawdown": 0.03389999997406079
+    },
+    {
+      "day_index": 5,
+      "fill_seed": 42,
+      "path": 6,
+      "deterministic": true,
+      "max_drawdown": 0.03152499991032509
+    },
+    {
+      "day_index": 5,
+      "fill_seed": 42,
+      "path": 7,
+      "deterministic": true,
+      "max_drawdown": 0.0336699999119654
+    },
+    {
+      "day_index": 5,
+      "fill_seed": 42,
+      "path": 8,
+      "deterministic": true,
+      "max_drawdown": 0.025859999788866883
+    },
+    {
+      "day_index": 5,
+      "fill_seed": 42,
+      "path": 9,
+      "deterministic": true,
+      "max_drawdown": 0.027309999998180068
+    },
+    {
+      "day_index": 5,
+      "fill_seed": 42,
+      "path": 10,
+      "deterministic": true,
+      "max_drawdown": 0.02385499991725082
+    },
+    {
+      "day_index": 5,
+      "fill_seed": 42,
+      "path": 11,
+      "deterministic": true,
+      "max_drawdown": 0.02712499995023565
+    },
+    {
+      "day_index": 5,
+      "fill_seed": 42,
+      "path": 12,
+      "deterministic": true,
+      "max_drawdown": 0.028309999911356076
+    },
+    {
+      "day_index": 5,
+      "fill_seed": 42,
+      "path": 13,
+      "deterministic": true,
+      "max_drawdown": 0.03247499995580805
+    },
+    {
+      "day_index": 5,
+      "fill_seed": 42,
+      "path": 14,
+      "deterministic": true,
+      "max_drawdown": 0.02511499999000444
+    },
+    {
+      "day_index": 5,
+      "fill_seed": 42,
+      "path": 15,
+      "deterministic": true,
+      "max_drawdown": 0.025914999911948566
+    },
+    {
+      "day_index": 5,
+      "fill_seed": 42,
+      "path": 16,
+      "deterministic": true,
+      "max_drawdown": 0.036499999971193464
+    },
+    {
+      "day_index": 5,
+      "fill_seed": 42,
+      "path": 17,
+      "deterministic": true,
+      "max_drawdown": 0.023434999945653345
+    },
+    {
+      "day_index": 5,
+      "fill_seed": 42,
+      "path": 18,
+      "deterministic": true,
+      "max_drawdown": 0.03484499994600476
+    },
+    {
+      "day_index": 5,
+      "fill_seed": 42,
+      "path": 19,
+      "deterministic": true,
+      "max_drawdown": 0.024219999985901186
+    },
+    {
+      "day_index": 5,
+      "fill_seed": 43,
+      "path": 0,
+      "deterministic": true,
+      "max_drawdown": 0.031109999888820905
+    },
+    {
+      "day_index": 5,
+      "fill_seed": 43,
+      "path": 1,
+      "deterministic": true,
+      "max_drawdown": 0.02960999987695434
+    },
+    {
+      "day_index": 5,
+      "fill_seed": 43,
+      "path": 2,
+      "deterministic": true,
+      "max_drawdown": 0.028009999879373693
+    },
+    {
+      "day_index": 5,
+      "fill_seed": 43,
+      "path": 3,
+      "deterministic": true,
+      "max_drawdown": 0.039884999673126975
+    },
+    {
+      "day_index": 5,
+      "fill_seed": 43,
+      "path": 4,
+      "deterministic": true,
+      "max_drawdown": 0.023279999988072397
+    },
+    {
+      "day_index": 5,
+      "fill_seed": 43,
+      "path": 5,
+      "deterministic": true,
+      "max_drawdown": 0.031249999940271334
+    },
+    {
+      "day_index": 5,
+      "fill_seed": 43,
+      "path": 6,
+      "deterministic": true,
+      "max_drawdown": 0.021494999937565318
+    },
+    {
+      "day_index": 5,
+      "fill_seed": 43,
+      "path": 7,
+      "deterministic": true,
+      "max_drawdown": 0.024954999955909107
+    },
+    {
+      "day_index": 5,
+      "fill_seed": 43,
+      "path": 8,
+      "deterministic": true,
+      "max_drawdown": 0.03827999975870089
+    },
+    {
+      "day_index": 5,
+      "fill_seed": 43,
+      "path": 9,
+      "deterministic": true,
+      "max_drawdown": 0.031569999961744255
+    },
+    {
+      "day_index": 5,
+      "fill_seed": 43,
+      "path": 10,
+      "deterministic": true,
+      "max_drawdown": 0.02680999996840283
+    },
+    {
+      "day_index": 5,
+      "fill_seed": 43,
+      "path": 11,
+      "deterministic": true,
+      "max_drawdown": 0.03136499995619979
+    },
+    {
+      "day_index": 5,
+      "fill_seed": 43,
+      "path": 12,
+      "deterministic": true,
+      "max_drawdown": 0.031549999944463725
+    },
+    {
+      "day_index": 5,
+      "fill_seed": 43,
+      "path": 13,
+      "deterministic": true,
+      "max_drawdown": 0.02591499989881063
+    },
+    {
+      "day_index": 5,
+      "fill_seed": 43,
+      "path": 14,
+      "deterministic": true,
+      "max_drawdown": 0.03809999991338353
+    },
+    {
+      "day_index": 5,
+      "fill_seed": 43,
+      "path": 15,
+      "deterministic": true,
+      "max_drawdown": 0.028719999984234246
+    },
+    {
+      "day_index": 5,
+      "fill_seed": 43,
+      "path": 16,
+      "deterministic": true,
+      "max_drawdown": 0.029509999973813983
+    },
+    {
+      "day_index": 5,
+      "fill_seed": 43,
+      "path": 17,
+      "deterministic": true,
+      "max_drawdown": 0.02729999999120647
+    },
+    {
+      "day_index": 5,
+      "fill_seed": 43,
+      "path": 18,
+      "deterministic": true,
+      "max_drawdown": 0.04300999995749333
+    },
+    {
+      "day_index": 5,
+      "fill_seed": 43,
+      "path": 19,
+      "deterministic": true,
+      "max_drawdown": 0.035959999849362934
+    }
+  ]
+}

@@ -1,0 +1,39 @@
+# Python caches and build files
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+build/
+dist/
+*.egg-info/
+.eggs/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+.ipynb_checkpoints/
+
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+
+# Data: licensed, never committed (data/README.md)
+data/*
+!data/README.md
+
+# Pipeline outputs: only results/final/ is published
+models/
+logs/
+tb_logs/
+results/*
+!results/final/
+
+# Files named .env (configs/final_pipeline.env and hummingbot_adapter/deploy/.env.example are tracked)
+.env
+
+# Local assistant settings
+CLAUDE.local.md
+.claude/

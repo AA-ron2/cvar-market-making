@@ -1,0 +1,24 @@
+\begin{table}[htbp]
+\centering
+\small
+\caption{Hummingbot forward validation (paper trading, binance\_paper\_trade, DOGE-USDT), per bot and prospective day (descriptive; forward test; not pre-specified for inference). USDT figures are for 100-DOGE orders (divide by 100 to compare with the replay); the trading window ends at 23:59:50 UTC; $E$: expected fills under the calibrated execution model; $f^{*}_{\mathrm{pre}}$: the break-even maker fee before the close; $R(10\,\mathrm{s})$: retention of the posted edge at 10 s; PIT: the paper value's rank among the 40 shadow-replay paths (n/a without the shadow replay).}
+\label{tab:hb-forward-validation}
+\begin{tabular}{lrrrr}
+\toprule
+ & B0 22 Oct & B3 22 Oct & B0 23 Oct & B3 23 Oct \\
+\midrule
+Limit fills (paper / $E$) & 1102 / 4645.1 (0.237) & 212 / 1017.9 (0.208) & 1116 / 4713.6 (0.237) & 150 / 662.6 (0.226) \\
+Mean $|q|$ (units) & 1.559 & 9.949 & 1.491 & 9.939 \\
+Near-cap share & 0.019 & 0.998 & 0.031 & 0.992 \\
+$q$ before close (units) & +8 & -10 & -8 & -10 \\
+$P_{\mathrm{pre}}$ (USDT) & -0.3360 & -2.6130 & -1.1290 & 4.0820 \\
+MaxDD before close (USDT) & 0.6575 & 3.6600 & 1.4965 & 1.3250 \\
+$f^{*}_{\mathrm{pre}}$ (\%) & -0.0038 & -0.1554 & -0.0128 & 0.3424 \\
+$R(10\,\mathrm{s})$ & -0.080 & -0.209 & -0.225 & -0.837 \\
+PIT $P_{\mathrm{pre}}$ & 0.000 & 0.000 & 0.000 & 0.825 \\
+PIT MaxDD & 1.000 & 1.000 & 1.000 & 1.000 \\
+PIT mean $|q|$ & 0.000 & 1.000 & 0.000 & 1.000 \\
+Downtime (min) & 0.84 & 0.84 & 0.00 & 0.00 \\
+\bottomrule
+\end{tabular}
+\end{table}

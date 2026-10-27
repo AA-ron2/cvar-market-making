@@ -1,0 +1,29 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+title: "Beyond Reward Shaping: CVaR-Constrained Reinforcement Learning for Avellaneda–Stoikov Market Making"
+type: software
+authors:
+  - alias: "AA-ron2"
+version: "1.0.0"
+date-released: "2026-10-27"
+license: BSD-3-Clause
+repository-code: "https://github.com/AA-ron2/cvar-market-making"
+abstract: >-
+  Code, tests and result tables of an MSc thesis on risk-aware market making. A PPO agent chooses the
+  Avellaneda–Stoikov risk aversion and a quote skew on replayed Binance Spot DOGEUSDT order books (25-level
+  snapshots, January 2025) with a best-price-reach execution proxy. The thesis compares a penalty-based reward
+  design (B2, a drawdown penalty) with a PPO-Lagrangian agent under a CVaR0.2 constraint on the full-day maximum
+  drawdown (B3), against unconstrained PPO (B1), a fine-tuned control without a risk term (B1+) and the analytical
+  Avellaneda–Stoikov baseline (B0). B3 did not reach its threshold on its training days within k = 10 updates. On 23
+  retrospective out-of-sample days, the trading day being the unit of inference, the primary tests give no evidence
+  that B3 changes the CVaR0.2 of the daily maximum drawdown relative to B1 or B2; B0 had the lowest CVaR0.2 and the
+  highest Sharpe ratio. The repository also holds the pre-registered Hummingbot paper-trading forward test of B0 and
+  B3, which is descriptive only.
+keywords:
+  - market making
+  - reinforcement learning
+  - constrained Markov decision process
+  - CVaR
+  - PPO-Lagrangian
+  - Avellaneda-Stoikov
+  - maximum drawdown

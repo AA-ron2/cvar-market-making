@@ -1,0 +1,55 @@
+# Hummingbot forward test (PROTOCOL.md, WO-HB2 deliverable 4): B0 and B3, one paper-trading bot per container.
+# Settings come from deploy/.env (git-ignored; see .env.example): HBOT_PASSWORD, HB_DATA, HB_ARTIFACTS, and for
+# a smoke run HB_RUN_SUBDIR=smoke/ with the smoke configs. See deploy/README.md.
+name: hb-forward-test
+
+x-bot: &bot
+  image: hummingbot-local:2.17.0-9af100d  # built from v2.17.0 (9af100d), ID sha256:49d7cb7ff1a9...d014 (PROTOCOL §2)
+  init: true                              # docker-init as PID 1: signals forwarded during start-up, zombies reaped
+  restart: unless-stopped
+  stop_grace_period: 60s                  # on_stop, then Hummingbot's cancel_all (20 s)
+  working_dir: /home/hummingbot
+  logging:
+    driver: json-file
+    options:
+      max-size: "10m"
+      max-file: "5"
+
+services:
+  hb_b0:
+    <<: *bot
+    container_name: hb_b0
+    command: ["hbot", "start", "${HB_B0_CONF:-conf_hb_b0.yml}", "--foreground"]
+    environment:
+      HBOT_PASSWORD: ${HBOT_PASSWORD:?set HBOT_PASSWORD in deploy/.env}
+      HB_RUN_SUBDIR: ${HB_RUN_SUBDIR:-}   # "" in production, "smoke/" in a smoke run; the bot checks it against its mode
+      PYTHONPATH: /repo
+      PYTHONDONTWRITEBYTECODE: "1"
+    volumes:
+      - ${HB_DATA:?set HB_DATA in deploy/.env}/${HB_RUN_SUBDIR:-}hb_b0/hummingbot/conf:/home/hummingbot/conf
+      - ./conf/scripts:/home/hummingbot/conf/scripts:ro
+      - ${HB_DATA}/${HB_RUN_SUBDIR:-}hb_b0/hummingbot/data:/home/hummingbot/data
+      - ${HB_DATA}/${HB_RUN_SUBDIR:-}hb_b0/hummingbot/logs:/home/hummingbot/logs
+      - ./scripts:/home/hummingbot/scripts:ro
+      - ../..:/repo:ro
+      - ${HB_ARTIFACTS:?set HB_ARTIFACTS in deploy/.env}:/artifacts:ro
+      - ${HB_DATA}:/hb_data
+
+  hb_b3:
+    <<: *bot
+    container_name: hb_b3
+    command: ["hbot", "start", "${HB_B3_CONF:-conf_hb_b3.yml}", "--foreground"]
+    environment:
+      HBOT_PASSWORD: ${HBOT_PASSWORD:?set HBOT_PASSWORD in deploy/.env}
+      HB_RUN_SUBDIR: ${HB_RUN_SUBDIR:-}
+      PYTHONPATH: /repo
+      PYTHONDONTWRITEBYTECODE: "1"
+    volumes:
+      - ${HB_DATA:?set HB_DATA in deploy/.env}/${HB_RUN_SUBDIR:-}hb_b3/hummingbot/conf:/home/hummingbot/conf
+      - ./conf/scripts:/home/hummingbot/conf/scripts:ro
+      - ${HB_DATA}/${HB_RUN_SUBDIR:-}hb_b3/hummingbot/data:/home/hummingbot/data
+      - ${HB_DATA}/${HB_RUN_SUBDIR:-}hb_b3/hummingbot/logs:/home/hummingbot/logs
+      - ./scripts:/home/hummingbot/scripts:ro
+      - ../..:/repo:ro
+      - ${HB_ARTIFACTS:?set HB_ARTIFACTS in deploy/.env}:/artifacts:ro
+      - ${HB_DATA}:/hb_data

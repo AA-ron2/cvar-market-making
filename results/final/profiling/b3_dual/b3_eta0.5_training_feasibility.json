@@ -1,0 +1,15 @@
+{
+  "rollouts": [
+    6,
+    7,
+    8,
+    9,
+    10
+  ],
+  "paths_pooled": 480,
+  "pooled_cvar": 0.09399031242734628,
+  "mean_batch_cvar": 0.09387095825876127,
+  "threshold_d": 0.07298833322901398,
+  "feasible": false,
+  "scope": "training diagnostic: stochastic training rollouts; d from stochastic B1 rollouts (D-17)"
+}

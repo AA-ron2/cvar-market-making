@@ -1,0 +1,8 @@
+# WO-HB2: never commit secrets, run data, logs, state files or the exported policy.
+deploy/.env
+*.npz
+*.sqlite
+*.log
+state.json
+state.json.tmp
+hb_data/

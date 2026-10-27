@@ -1,0 +1,15 @@
+model,output,feature,mean_abs_shap,samples,background,nsamples
+b1,u_gamma,inventory_norm,0.013008073619611574,150,30,100
+b1,u_gamma,time_remaining_frac,5.672328423327909e-05,150,30,100
+b1,u_gamma,log_mid_rel,0.0021620419465369057,150,30,100
+b1,u_gamma,rolling_vol_ticks,0.5131377277485138,150,30,100
+b1,u_gamma,momentum_ticks,0.7510040690851697,150,30,100
+b1,u_gamma,spread_ticks,0.0,150,30,100
+b1,u_gamma,lob_imbalance,0.021864444597944906,150,30,100
+b1,u_skew,inventory_norm,0.021886067242508248,150,30,100
+b1,u_skew,time_remaining_frac,0.00010541968942715957,150,30,100
+b1,u_skew,log_mid_rel,0.0034325179200603282,150,30,100
+b1,u_skew,rolling_vol_ticks,0.670908813627394,150,30,100
+b1,u_skew,momentum_ticks,1.1884027248869178,150,30,100
+b1,u_skew,spread_ticks,0.0,150,30,100
+b1,u_skew,lob_imbalance,0.07772378676870191,150,30,100

@@ -1,0 +1,49 @@
+# Hummingbot forward test (PROTOCOL.md), B0 in production mode.
+# Every field of hummingbot_adapter/bot_config.BotSettings; the bot refuses to start if a protocol
+# constant differs from PROTOCOL.md (in production also a §7 threshold).
+script_file_name: hb_forward_bot.py
+controllers_config: []
+model: B0
+mode: production
+# paths inside the container (deploy/docker-compose.yml)
+artifacts_dir: /artifacts
+repo_dir: /repo
+data_root: /hb_data
+# PROTOCOL.md constants
+exchange: binance_paper_trade  # §3
+trading_pair: DOGE-USDT  # §3
+tick_size: 0.00001  # §3
+order_amount_doge: 100  # §5.1
+q_max: 10  # §5.1
+feature_window: 100  # §5.2
+imbalance_depth: 5  # §5.2
+book_levels: 25  # §5.1
+day_seconds: 86400  # §5.2
+sampling_interval_s: 0.1  # §5.1
+gamma_b0: 0.8908584807525282  # §2
+gamma_min: 0.01  # §5.2
+gamma_max: 0.9  # §5.2
+skew_ticks_max: 5.0  # §5.2
+requote_min_ticks: 1  # §5.3
+requote_min_age_s: 1.0  # §5.3
+rate_window_s: 10  # §5.3
+rate_max_per_window: 100  # §5.3
+rate_max_per_day: 200000  # §5.3
+close_seconds_before_midnight: 10  # §5.5
+paper_doge_balance: 1000000  # §3
+paper_usdt_balance: 100000  # §3
+fee_rate: 0.001  # §3
+# PROTOCOL §7 thresholds
+halt_q_max: 10
+residual_max_doge: 1.0
+stale_pause_s: 30.0
+stale_halt_s: 300.0
+reject_max: 10
+reject_window_s: 60.0
+drawdown_limit_usdt: 40.0
+clock_warn_s: 0.5
+clock_pause_s: 2.0
+clock_check_interval_s: 3600.0
+# operation (not in PROTOCOL.md)
+save_interval_s: 1.0
+heartbeat_interval_s: 60.0

@@ -1,0 +1,33 @@
+bot,day,limit,fee_pct,threshold_usdt,first_utc,downtime_flag
+hb_b0,2026-10-22,gross drawdown > 10% of the notional at the cap,,8.1975,never,False
+hb_b0,2026-10-22,gross drawdown > 20% of the notional at the cap,,16.395,never,False
+hb_b0,2026-10-22,gross drawdown > 30% of the notional at the cap,,24.592499999999998,never,False
+hb_b0,2026-10-22,net-equity drawdown > 40 USDT,0.0,40.0,never,False
+hb_b0,2026-10-22,net-equity drawdown > 40 USDT,0.01,40.0,never,False
+hb_b0,2026-10-22,net-equity drawdown > 40 USDT,0.02,40.0,never,False
+hb_b0,2026-10-22,net-equity drawdown > 40 USDT,0.075,40.0,never,False
+hb_b0,2026-10-22,net-equity drawdown > 40 USDT,0.1,40.0,never,False
+hb_b3,2026-10-22,gross drawdown > 10% of the notional at the cap,,8.1975,never,False
+hb_b3,2026-10-22,gross drawdown > 20% of the notional at the cap,,16.395,never,False
+hb_b3,2026-10-22,gross drawdown > 30% of the notional at the cap,,24.592499999999998,never,False
+hb_b3,2026-10-22,net-equity drawdown > 40 USDT,0.0,40.0,never,False
+hb_b3,2026-10-22,net-equity drawdown > 40 USDT,0.01,40.0,never,False
+hb_b3,2026-10-22,net-equity drawdown > 40 USDT,0.02,40.0,never,False
+hb_b3,2026-10-22,net-equity drawdown > 40 USDT,0.075,40.0,never,False
+hb_b3,2026-10-22,net-equity drawdown > 40 USDT,0.1,40.0,never,False
+hb_b0,2026-10-23,gross drawdown > 10% of the notional at the cap,,7.8825,never,False
+hb_b0,2026-10-23,gross drawdown > 20% of the notional at the cap,,15.765,never,False
+hb_b0,2026-10-23,gross drawdown > 30% of the notional at the cap,,23.6475,never,False
+hb_b0,2026-10-23,net-equity drawdown > 40 USDT,0.0,40.0,never,False
+hb_b0,2026-10-23,net-equity drawdown > 40 USDT,0.01,40.0,never,False
+hb_b0,2026-10-23,net-equity drawdown > 40 USDT,0.02,40.0,never,False
+hb_b0,2026-10-23,net-equity drawdown > 40 USDT,0.075,40.0,never,False
+hb_b0,2026-10-23,net-equity drawdown > 40 USDT,0.1,40.0,never,False
+hb_b3,2026-10-23,gross drawdown > 10% of the notional at the cap,,7.8825,never,False
+hb_b3,2026-10-23,gross drawdown > 20% of the notional at the cap,,15.765,never,False
+hb_b3,2026-10-23,gross drawdown > 30% of the notional at the cap,,23.6475,never,False
+hb_b3,2026-10-23,net-equity drawdown > 40 USDT,0.0,40.0,never,False
+hb_b3,2026-10-23,net-equity drawdown > 40 USDT,0.01,40.0,never,False
+hb_b3,2026-10-23,net-equity drawdown > 40 USDT,0.02,40.0,never,False
+hb_b3,2026-10-23,net-equity drawdown > 40 USDT,0.075,40.0,never,False
+hb_b3,2026-10-23,net-equity drawdown > 40 USDT,0.1,40.0,never,False

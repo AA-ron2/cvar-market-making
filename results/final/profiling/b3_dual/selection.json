@@ -1,0 +1,105 @@
+{
+  "rule": "D-12a",
+  "rule_text": "eta_lambda in {0.5, 2, 8}, 10 B3 updates each on Jan 1-6 with training seed 42. Exclude an eta if lambda after any update reaches lambda_max, or if H_u - d changes sign more than twice over the 10 updates (an exact zero is not a sign). Among the rest choose the smallest mean |H_u - d|/d over updates 8-10; ties go to the smaller eta. If the lambda used at every update is 0 for every eta, the runs coincide and their criteria tie by construction. If every eta is excluded, stop: there is no fallback (DECISIONS D-12a).",
+  "eta_grid": [
+    0.5,
+    2.0,
+    8.0
+  ],
+  "updates_per_eta": 10,
+  "criterion_updates": [
+    8,
+    9,
+    10
+  ],
+  "max_sign_changes": 2,
+  "tie_break": "the smaller eta, on an exact tie or a tie by construction",
+  "lambda_max": 500.0,
+  "selected_lambda_lr": 8.0,
+  "selection_note": null,
+  "per_eta": {
+    "0.5": {
+      "max_lambda": 1.4645059605966353,
+      "violation_sign_changes": 0,
+      "criterion": 0.2837932153974929,
+      "kept": true,
+      "exclusion_reason": null,
+      "seconds_per_update": 5425.056975430018
+    },
+    "2.0": {
+      "max_lambda": 5.840700870107595,
+      "violation_sign_changes": 0,
+      "criterion": 0.27748798401661673,
+      "kept": true,
+      "exclusion_reason": null,
+      "seconds_per_update": 5360.209262949694
+    },
+    "8.0": {
+      "max_lambda": 21.915003568632603,
+      "violation_sign_changes": 0,
+      "criterion": 0.24916534422573733,
+      "kept": true,
+      "exclusion_reason": null,
+      "seconds_per_update": 5253.409184624581
+    }
+  },
+  "threshold_d": 0.07298833322901398,
+  "training_fill_paths": 16,
+  "training_seed": 42,
+  "inputs_sha256": [
+    "8137e1c3b9673044bbcfc4fa5222feff3d11df8549072d6e1461b1761a75e652  models/ppo_b1_doge.zip",
+    "f53cbb84b213f04c20e2cdf2fcf24bba50f34b5cfa4615bf6b6875ca5a5d2f53  models/vecnorm_b1.pkl",
+    "3782266b883c58ed061bb0b3b30831e61ba44b922680e774b37c9c6cbc332e41  results/cvar_threshold_d.txt",
+    "e5049aa49cef0f0d47151983ec4eaeea8c54636df9244f3e17aa25b76b36cbed  results/cvar_threshold_b3.json",
+    "2d0b4a916bcf52e8641fac0a6e34f93f088166ee87c4b98b4d24975f1f6426f8  results/formula_train_params.json",
+    "79cdc69b36e5c7b494274aa23ee2587246c5c3f83571a34878a2a10f1db28059  results/formula_manifest.csv"
+  ],
+  "histories_sha256": [
+    "80aa99fa217bc1f98561a8006652283ae760d2677d9d5a58d4f167ee0af33c2c  results/profiling/b3_dual/history_eta0.5.csv",
+    "6b034df3076f2efb31f21c52341e40e63e2b06452cf293655b89f55af5690de1  results/profiling/b3_dual/history_eta2.0.csv",
+    "a0f876cd673b48c68a08dc224cb32eaff3f1e903f60e9c942cf29b3f60444780  results/profiling/b3_dual/history_eta8.0.csv"
+  ],
+  "promoted_b3": {
+    "eta": 8.0,
+    "files": {
+      "model_path": {
+        "from": "models/ppo_b3_eta8.0_doge.zip",
+        "to": "models/ppo_b3_doge.zip",
+        "sha256": "05ee4c97524456a6445f54cfe0a4bf353ccd539c20060f1176b83455cebe4e53"
+      },
+      "vecnorm_path": {
+        "from": "models/vecnorm_b3_eta8.0.pkl",
+        "to": "models/vecnorm_b3.pkl",
+        "sha256": "d2be858e002d3b1e5a32bbe65822de3a4686cdbb91a81b8636241460a9b009b9"
+      },
+      "history_path": {
+        "from": "results/profiling/b3_dual/b3_eta8.0_cvar_lagrangian_history.csv",
+        "to": "results/b3_cvar_lagrangian_history.csv",
+        "sha256": "abf78774777b938c1af63e7f45b6f2fa618ea993fd0cf4e77f9a7307c3763d95"
+      },
+      "training_costs_path": {
+        "from": "results/profiling/b3_dual/b3_eta8.0_training_costs.csv",
+        "to": "results/b3_training_costs.csv",
+        "sha256": "49efda7913b941895f9d7ee1ce1211209a37550b0fdc93327fe9a32de8619463"
+      },
+      "training_feasibility_path": {
+        "from": "results/profiling/b3_dual/b3_eta8.0_training_feasibility.json",
+        "to": "results/b3_training_feasibility.json",
+        "sha256": "24d355b683b0da54464e7b3878faad6b0e383a7d4e24957401ad2396955346ba"
+      }
+    }
+  },
+  "dates_used": [
+    "2025-01-01",
+    "2025-01-02",
+    "2025-01-03",
+    "2025-01-04",
+    "2025-01-05",
+    "2025-01-06"
+  ],
+  "excluded": "January 7-29 is never loaded",
+  "git_commit": "fe5f9feabb460a2f7ec646f79ef7a11269a69955",
+  "python_version": "3.11.4",
+  "python_executable": "<VENV>/bin/python",
+  "timestamp_utc": "2026-10-15T07:27:35.478281+00:00"
+}

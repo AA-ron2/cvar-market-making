@@ -1,0 +1,5 @@
+bot,day,at_price_trade_fills,at_price_engine_through,at_price_not_engine_through,through_trade_fills,no_trade_fills,book_resyncs,snapshots_ahead_of_diffs,snapshot_errors,crossed_or_locked_books,crossed_or_locked_source,crossed_book_rows,skipped_steps,re_anchors,clock_backward,round_bid_steps,round_ask_steps,round_bid_orders,round_ask_orders,downtime_flag
+hb_b0,2026-10-22,816,707,109,270,16,1432,11,2,0,day_end counters,0,0,0,0,0,0,0,0,False
+hb_b3,2026-10-22,149,124,25,51,12,1432,8,2,0,day_end counters,0,0,0,0,0,5,0,1,False
+hb_b0,2026-10-23,878,697,181,223,15,1432,20,0,0,day_end counters,0,0,0,0,0,0,0,0,False
+hb_b3,2026-10-23,107,94,13,32,11,1432,24,0,0,day_end counters,0,0,0,0,0,7,0,1,False

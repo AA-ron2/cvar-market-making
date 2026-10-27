@@ -1,0 +1,5 @@
+bot,day,uptime_pct,downtime_min,gaps_over_30s,longest_gap_s,longest_step_gap_s,container_restarts,fresh_starts,stops,ws_reconnects,ws_errors,resubscriptions,stale_book_pauses,stale_book_pause_s,quoting_paused_min,rejects,order_failed_rows,new_orders,max_new_orders_10s,rate_skips,not_quoting_skips,cancels,cancelled,s7_triggers,clock_checks,clock_check_errors,max_abs_step_offset_s,max_abs_wall_offset_s,max_abs_residual_doge,downtime_flag
+hb_b0,2026-10-22,99.94155146064814,0.8416589666666667,1,50.499538,50.499538,0,0,0,2,5,2,1,20.498668,0.34164446666666665,0,0,36573,38,0,0,35470,35470,stale_book:pause=1; stale_book:resume=1,24,0,0.067313,0.0635825,0.0,False
+hb_b3,2026-10-22,99.94155258101853,0.8416428333333333,1,50.49857,50.49857,0,0,0,2,5,2,1,20.498132,0.3416355333333333,0,0,27136,25,0,0,26923,26923,stale_book:pause=1; stale_book:resume=1,24,0,0.065772,0.058005,0.0,False
+hb_b0,2026-10-23,100.0,0.0,0,0.0,22.29915,0,0,0,1,4,1,0,0.0,0.0,0,0,36079,30,0,0,34962,34962,none,24,0,0.063994,0.079992,0.0,False
+hb_b3,2026-10-23,100.0,0.0,0,0.0,22.299968,0,0,0,1,4,1,0,0.0,0.0,0,0,22331,29,0,0,22180,22180,none,24,0,0.066561,0.0498385,0.0,False

@@ -1,0 +1,64 @@
+{
+  "script": "scripts/analysis/cvar_test_size_study.py",
+  "decision": "D-14a size study",
+  "designs": [
+    {
+      "phi": 0.0,
+      "within_day_correlation": 0.5,
+      "sigma": 0.5
+    },
+    {
+      "phi": 0.0,
+      "within_day_correlation": 0.5,
+      "sigma": 1.0
+    },
+    {
+      "phi": 0.0,
+      "within_day_correlation": 0.9,
+      "sigma": 0.5
+    },
+    {
+      "phi": 0.0,
+      "within_day_correlation": 0.9,
+      "sigma": 1.0
+    },
+    {
+      "phi": 0.5,
+      "within_day_correlation": 0.5,
+      "sigma": 0.5
+    },
+    {
+      "phi": 0.5,
+      "within_day_correlation": 0.5,
+      "sigma": 1.0
+    },
+    {
+      "phi": 0.5,
+      "within_day_correlation": 0.9,
+      "sigma": 0.5
+    },
+    {
+      "phi": 0.5,
+      "within_day_correlation": 0.9,
+      "sigma": 1.0
+    }
+  ],
+  "days": 23,
+  "rho": 0.2,
+  "alpha": 0.05,
+  "seed": 42,
+  "replications": 2000,
+  "randomization_draws": 2000,
+  "bootstrap_draws": 2000,
+  "bootstrap_block_length": 3,
+  "rejection_rule": "randomization: p <= alpha (Phipson & Smyth 2010); bootstrap: p < alpha, the D-14 test its CI inverts, so its rejection rate is 1 - coverage; the CI covers when ci_low <= 0 <= ci_high. With 2,000 draws p is a multiple of 1/2001, and the two rules coincide",
+  "workers": 15,
+  "chunk": 50,
+  "wall_seconds": 3588.4,
+  "python_version": "3.13.9",
+  "numpy_version": "2.3.5",
+  "platform": "Windows-11-10.0.26300-SP0",
+  "timestamp_utc": "2026-10-12T13:46:44.717272+00:00",
+  "git_commit": "d4902f0c1441e8cadc04b7af620dae9ebe640f50",
+  "uncommitted_code": ""
+}

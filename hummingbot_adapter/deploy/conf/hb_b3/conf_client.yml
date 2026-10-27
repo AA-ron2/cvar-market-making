@@ -1,0 +1,17 @@
+# Hummingbot 2.17.0 client settings for hb_b3 (PROTOCOL §3, §5.1). deploy/prepare.ps1 copies this file into the
+# bot's writable conf folder; Hummingbot rewrites that copy at every start with all defaults merged in, so the
+# record of the settings is this template.
+instance_id: hb_b3_forward_test
+log_level: INFO
+tick_size: 0.1
+send_error_logs: false
+anonymized_metrics_mode: anonymized_metrics_disabled
+rate_oracle_source: binance
+mqtt_bridge:
+  mqtt_autostart: false
+paper_trade:
+  paper_trade_exchanges:
+  - binance
+  paper_trade_account_balance:
+    DOGE: 1000000
+    USDT: 100000

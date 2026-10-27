@@ -1,0 +1,5 @@
+bot,day,new_orders,bot_day_orders,max_new_orders_10s,bot_max_in_window,cancels,bot_cancels,bot_rate_skips,max_abs_residual_doge,bot_max_abs_residual_doge,bot_reconnects,bot_triggers,downtime_flag
+hb_b0,2026-10-22,36573,36573,38,38,35470,35470,0,0.0,0,7,"{""stale_book:pause"": 1, ""stale_book:resume"": 1}",False
+hb_b3,2026-10-22,27136,27136,25,25,26923,26923,0,0.0,0,7,"{""stale_book:pause"": 1, ""stale_book:resume"": 1}",False
+hb_b0,2026-10-23,36079,36079,30,30,34962,34962,0,0.0,0,5,{},False
+hb_b3,2026-10-23,22331,22331,29,29,22180,22180,0,0.0,0,5,{},False

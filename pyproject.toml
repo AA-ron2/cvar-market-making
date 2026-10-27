@@ -1,0 +1,41 @@
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "cvar-mm"
+version = "1.0.0"
+description = "Beyond Reward Shaping: CVaR-Constrained Reinforcement Learning for Avellaneda–Stoikov Market Making (MSc thesis code)"
+readme = "README.md"
+requires-python = ">=3.11,<3.12"
+license = "BSD-3-Clause"
+license-files = ["LICENSE", "THIRD_PARTY_NOTICES.md"]
+authors = [{ name = "AA-ron2" }]
+keywords = ["market making", "reinforcement learning", "CVaR", "constrained MDP", "Avellaneda-Stoikov", "PPO-Lagrangian"]
+# Ranges, not pins; each includes the version in requirements-lock.txt (the thesis run).
+dependencies = [
+    "numpy>=2.0,<3",  # the model pickles reference numpy._core
+    "pandas>=3.0,<4",
+    "scipy>=1.14,<2",
+    "gymnasium>=1.0,<2",
+    "stable-baselines3>=2.8,<3",
+    "torch>=2.3,<3",
+    "optuna>=4.0,<5",
+    "shap>=0.46,<1",
+    "seaborn>=0.13,<1",
+    "matplotlib>=3.8,<4",
+    "tensorboard>=2.15,<3",
+    "pyyaml>=6.0,<7",
+]
+
+[project.optional-dependencies]
+test = ["pytest>=8,<10"]
+
+[project.urls]
+Repository = "https://github.com/AA-ron2/cvar-market-making"
+
+[tool.setuptools.packages.find]
+include = ["cvar_mm", "cvar_mm.*", "hummingbot_adapter", "hummingbot_adapter.*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests", "hummingbot_adapter/tests"]
